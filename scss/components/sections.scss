@@ -97,12 +97,32 @@
             margin-right: auto;
         }
     }
+    &-image {
+        &-right {
+            padding-right: 6rem;
+        }
+        &-left {
+            padding-left: 6rem;
+        }
+        &-right, &-left {
+            max-height: 500px;
+            object-fit: scale-down;
+            @include media("xxl") {
+                padding: 0;
+            }
+        }
+    }
     &-dark {
         h1,h2,h3,h4,h5,p,li {
             color: var(--secondary-color);
         }
         p, li {
             font-weight: 400;
+        }
+    }
+    &-background {
+        &-light {
+            background-color: var(--background-secondary-color);
         }
     }
 }

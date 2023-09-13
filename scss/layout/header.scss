@@ -12,6 +12,9 @@
             @include media("xxl") {
                 row-gap: .5rem;
             }
+            @include media("xl") {
+                padding: 0;
+            }
             @include media("lg") {
                 flex-direction: column;
             }
@@ -96,8 +99,9 @@
         padding: 2.5rem 1.5rem;
         @include media("xl") {
             flex-wrap: wrap;
-            @include flexCenter();
+            display: flex;
             gap: 1.25rem;
+            padding: 2.5rem 0;
         }
         @include media("lg") {
             justify-content: space-between;
@@ -192,7 +196,7 @@
     }
     .animated-icon {
         width: 30px;
-        height: 20px;
+        height: 24px;
         position: relative;
         margin: 0px;
         -webkit-transform: rotate(0deg);
@@ -250,6 +254,77 @@
                 -moz-transform: rotate(-135deg);
                 -o-transform: rotate(-135deg);
                 transform: rotate(-135deg);
+            }
+        }
+    }
+    &-subpage {
+        h1 {
+            font-size: 54px;
+            line-height: 65px;
+            font-weight: 500;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+            @include media("xl") {
+                margin-bottom: 2rem;
+            }
+            @include media("md") {
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        &-photo {
+            margin-bottom: -5.5rem;
+            display: block;
+            width: 800px;
+            max-height: 500px;
+            aspect-ratio: 2/1;
+            margin-left: auto;
+            object-fit: cover;
+        }
+        &-text {
+            @include media("xl") {
+                padding: 1.5rem 0 4rem 0;
+            }
+            @include media("lg") {
+                padding: 2.5rem 0 4rem;
+            }
+        }
+        &-breadcrumb {
+            padding-top: 1.5rem;
+            @include media("xxl") {
+                padding-top: 0;
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
+                @include media("md") {
+                    justify-content: center;
+                }
+                li {
+                    display: flex;
+                    align-items: center;
+                    &:not(:last-child) {
+                        &::after {
+                            content: "";
+                            width: 11px;
+                            height: 1px;
+                            background-color: var(--highlight-color);
+                            display: inline-block;
+                            margin: 0 .75rem;
+                        }
+                    }
+                    a {
+                        color: var(--secondary-color) !important;
+                        transition-duration: 0.15s;
+                        text-decoration: none;
+                        &[href]:hover {
+                            color: var(--highlight-color) !important;
+                        }
+                    }
+                }
             }
         }
     }

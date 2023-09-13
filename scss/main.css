@@ -177,6 +177,10 @@ input, textarea, button, select {
   color: var(--secondary-color);
 }
 
+.button-cyan svg {
+  fill: var(--secondary-color);
+}
+
 .button-cyan:not(.button-shine) {
   border: 2px solid var(--highlight-color);
 }
@@ -191,7 +195,7 @@ input, textarea, button, select {
 }
 
 .header-banner {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 @media (max-width: 1500px) {
@@ -603,12 +607,35 @@ input, textarea, button, select {
   }
 }
 
+.section-image-right {
+  padding-right: 6rem;
+}
+
+.section-image-left {
+  padding-left: 6rem;
+}
+
+.section-image-right, .section-image-left {
+  max-height: 500px;
+  object-fit: scale-down;
+}
+
+@media (max-width: 1601px) {
+  .section-image-right, .section-image-left {
+    padding: 0;
+  }
+}
+
 .section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark h5, .section-dark p, .section-dark li {
   color: var(--secondary-color);
 }
 
 .section-dark p, .section-dark li {
   font-weight: 400;
+}
+
+.section-background-light {
+  background-color: var(--background-secondary-color);
 }
 
 .section-aboutus {
@@ -873,10 +900,6 @@ input, textarea, button, select {
 
 .copyright a {
   color: var(--light-color);
-}
-
-.section-news {
-  background-color: var(--background-secondary-color);
 }
 
 .section-news-row {
@@ -1201,6 +1224,9 @@ input, textarea, button, select {
   .container-split > .row > .col-xl-6:nth-child(even) > .container {
     padding: 0 0.75rem 0 0;
   }
+  .container-xl-fluid {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1221,6 +1247,16 @@ input, textarea, button, select {
   }
 }
 
+.subpage {
+  margin-top: 5.5rem;
+}
+
+@media (max-width: 1200px) {
+  .subpage {
+    margin-top: 0;
+  }
+}
+
 .header-extended {
   background-image: url(../../img/layout-header-home-background.png);
   background-repeat: no-repeat;
@@ -1236,6 +1272,12 @@ input, textarea, button, select {
 @media (max-width: 1601px) {
   .header-menu > ul {
     row-gap: .5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-menu > ul {
+    padding: 0;
   }
 }
 
@@ -1347,9 +1389,8 @@ input, textarea, button, select {
   .header-nav {
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.25rem;
+    padding: 2.5rem 0;
   }
 }
 
@@ -1472,7 +1513,7 @@ input, textarea, button, select {
 
 .header .animated-icon {
   width: 30px;
-  height: 20px;
+  height: 24px;
   position: relative;
   margin: 0px;
   -webkit-transform: rotate(0deg);
@@ -1537,6 +1578,97 @@ input, textarea, button, select {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.header-subpage h1 {
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1200px) {
+  .header-subpage h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-subpage h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.header-subpage-photo {
+  margin-bottom: -5.5rem;
+  display: block;
+  width: 800px;
+  max-height: 500px;
+  aspect-ratio: 2/1;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .header-subpage-text {
+    padding: 1.5rem 0 4rem 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-subpage-text {
+    padding: 2.5rem 0 4rem;
+  }
+}
+
+.header-subpage-breadcrumb {
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 1601px) {
+  .header-subpage-breadcrumb {
+    padding-top: 0;
+  }
+}
+
+.header-subpage-breadcrumb ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-subpage-breadcrumb ul {
+    justify-content: center;
+  }
+}
+
+.header-subpage-breadcrumb ul li {
+  display: flex;
+  align-items: center;
+}
+
+.header-subpage-breadcrumb ul li:not(:last-child)::after {
+  content: "";
+  width: 11px;
+  height: 1px;
+  background-color: var(--highlight-color);
+  display: inline-block;
+  margin: 0 .75rem;
+}
+
+.header-subpage-breadcrumb ul li a {
+  color: var(--secondary-color) !important;
+  transition-duration: 0.15s;
+  text-decoration: none;
+}
+
+.header-subpage-breadcrumb ul li a[href]:hover {
+  color: var(--highlight-color) !important;
 }
 
 .footer {

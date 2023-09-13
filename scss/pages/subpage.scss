@@ -1,0 +1,6 @@
+.subpage {
+    margin-top: 5.5rem;
+    @include media("xl") {
+        margin-top: 0;
+    }
+}

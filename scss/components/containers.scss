@@ -72,6 +72,9 @@
             }
         }
     }    
+    .container-xl-fluid {
+        max-width: 100%;
+    }
 }
 
 @include media("xl") {
