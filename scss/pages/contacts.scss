@@ -1,0 +1,103 @@
+.contacts {
+    &-top {
+        background-color: var(--section-color2);
+        padding: 7rem 0;
+        position: relative;
+        @include media("md") {
+            padding: 3rem 0;
+        }
+    }
+    &-map {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 55%;
+        iframe {
+            height: 100%;
+            width: 100%;
+            filter: grayscale(1);
+        }
+        @include media("xl") {
+            position: unset;
+            margin-top: 2.5rem;
+            iframe {
+                height: 300px;
+            }
+        }
+    }
+    &-row {
+        margin-bottom: -3.5rem;
+        @include media("md") {
+            margin-bottom: -2rem;
+        }
+    }
+    &-item {
+        margin-bottom: 3.5rem;
+        @include media("md") {
+            margin-bottom: 2rem;
+        }
+        &-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100% - 3.5rem);
+            @include media("md") {
+                height: calc(100% - 2rem);
+            }
+        }
+        &-header {
+            @extend .product-detail-description-header;
+            margin-bottom: 2rem;
+            h3 {
+                font-size: 19.5px;
+            }
+        }
+        &-image {
+            margin-bottom: 1.5rem;
+            img {
+                width: 180px;
+                object-fit: cover;
+                background-color: var(--section-color2);
+                aspect-ratio: 1/1;
+                border-radius: var(--border-radius);
+            }
+        }
+        &-smalltext {
+            margin-top: 1.25rem;
+            p {
+                font-size: 14px;
+                line-height: 26px;
+                @include min-media("xl") {
+                    max-width: 90%;
+                }
+            }
+        }
+        &-contacts {
+            margin-top: 1.25rem;
+            p {
+                margin-bottom: 0;
+            }
+            &-tel {
+                a {
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--highlight-color);
+                    }
+                }
+            }
+            &-email {
+                a {
+                    color: var(--highlight-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--highlight-color2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.section-map {
+    &-pins {
+        &-item {
+            position: absolute;
+            span {
+                position: relative;
+                background-color: var(--secondary-color-opacity);
+                width: 50px;
+                display: block;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                transition-duration: 0.1s;
+                @include media("sm") {
+                    width: 26px;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-color: var(--highlight-color2);
+                    width: 17px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    @include media("sm") {
+                        width: 10px;
+                    }
+                }
+                &:hover {
+                    background-color: var(--highlight-color);
+                }
+            }
+        }
+    }
+}

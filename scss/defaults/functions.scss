@@ -1,0 +1,55 @@
+@function break($break) {
+    @return map-get($breaks, $break);
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterDir($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin widthFit() {
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+@mixin media($size) {
+    $pixelSize: break($size);
+    @media (max-width: $pixelSize) {
+        @content;
+    }
+}
+@mixin min-media($size) {
+    $pixelSize: break($size);
+    @media (min-width: $pixelSize) {
+        @content;
+    }
+}
+
+@mixin shake ($n) {
+
+    0%{transform: rotateZ(0);}
+
+    $pos: 1;
+    @for $i from 1 through 9 {
+
+        $pos: $pos * -1;
+        $m: ($n / $i) * $pos;
+        
+        #{$i*10%}{transform:  rotateZ($m * 1deg)}
+    }
+
+    100%{transform: rotateZ(0);}
+    
+}
+
+@keyframes shake {
+    @include shake(30);
+}

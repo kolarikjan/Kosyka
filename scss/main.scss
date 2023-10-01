@@ -1,0 +1,64 @@
+/* 
+Theme name: DFK
+Author: Jan Kolařík
+Author's url: www.jan-kolarik.cz
+*/
+
+// Defaults
+@import "defaults/variables";
+@import "defaults/resets";
+@import "defaults/functions";
+
+// Theme Components
+@import "components/theme/buttons";
+@import "components/theme/icons";
+@import "components/theme/dropdowns";
+@import "components/theme/pagination";
+@import "components/theme/buttons-filter";
+@import "components/theme/animations";
+
+// Page Components
+@import "components/sections";
+@import "components/banners";
+@import "components/aboutus";
+@import "components/news";
+@import "components/copyright";
+@import "components/newsletter";
+@import "components/forms";
+@import "components/map";
+@import "components/products-filter";
+@import "components/contactform";
+
+// Pages
+@import "pages/subpage";
+@import "pages/documents";
+@import "pages/region-select";
+@import "pages/dealers";
+@import "pages/company";
+@import "pages/products-catalog";
+@import "pages/product-detail";
+@import "pages/contacts";
+@import "pages/quality";
+
+// Layouts
+@import "layout/header";
+@import "layout/footer";
+
+// Style 
+@media (min-width: map-get($breaks, "xxl")) {
+    .container {
+        max-width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container-extended {
+        max-width: 1540px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+}
+@media (min-width: map-get($breaks, "xxxl")) {
+    .container-extended {
+        max-width: 1680px;
+    }
+}

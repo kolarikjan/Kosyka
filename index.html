@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- DEFAULTS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosyka</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/fancybox.css"> 
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="header-nav navbar navbar-expand-lg navbar-light">
+                <a class="header-logo" href="#">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animated-icon"><span></span><span></span><span></span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <div class="header-menu d-lg-none">
+                        <ul>
+                            <li class="header-menu-link">
+                                <a href="">Kabiny UTV</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kabiny vzv</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kabiny pro Traktory</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kabiny pro ATV</a>
+                            </li>
+                            <li class="dropdown-hover header-menu-link">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="8px">
+                                        <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M11.661,1.556 L10.409,0.150 L6.164,4.762 L1.920,0.150 L0.668,1.556 L4.912,6.168 L6.164,7.574 L7.417,6.168 L11.661,1.556 Z"/>
+                                    </svg>
+                                    O nás
+                                </a>
+                                <div class="dropdown-hover-menu">
+                                    <div>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Náš příběh
+                                        </a>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Kde pomáháme
+                                        </a>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Reference
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Novinky</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Galerie</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kontakty</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-rightbox flex-column flex-md-row align-items-start align-items-md-center">
+                        <div class="header-contact d-flex align-items-center">
+                            <div class="theme-icon flex-shrink-0 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                    <path fill-rule="evenodd" fill="rgb(57, 75, 128)" d="M12.000,10.008 L12.000,6.012 L16.000,6.012 L16.000,10.008 L12.000,10.008 ZM12.000,0.019 L16.000,0.019 L16.000,4.015 L12.000,4.015 L12.000,0.019 ZM5.1000,12.005 L10.000,12.005 L10.000,16.001 L5.1000,16.001 L5.1000,12.005 ZM5.1000,6.012 L10.000,6.012 L10.000,10.008 L5.1000,10.008 L5.1000,6.012 ZM5.1000,0.019 L10.000,0.019 L10.000,4.015 L5.1000,4.015 L5.1000,0.019 ZM-0.000,6.012 L4.000,6.012 L4.000,10.008 L-0.000,10.008 L-0.000,6.012 ZM-0.000,-0.001 L4.000,-0.001 L4.000,3.994 L-0.000,3.994 L-0.000,-0.001 Z"></path>
+                                </svg>
+                            </div>
+                            <div class="header-contact-content d-flex flex-column flex-xl-row">
+                                <a href="#">+420 572 520 074</a>
+                                <a href="#">info@dfk.cz</a>
+                            </div>
+                        </div>
+                        <div class="header-languages">
+                            <div class="theme-dropdown">
+                                <div class="theme-dropdown-header">
+                                    <div class="theme-dropdown-header-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="21px">
+                                            <path fill-rule="evenodd"  fill="rgb(205, 205, 205)" d="M10.220,0.561 C4.584,0.561 0.000,5.146 0.000,10.780 C0.000,16.415 4.584,20.1000 10.220,20.1000 C15.855,20.1000 20.439,16.415 20.439,10.780 C20.439,5.146 15.855,0.561 10.220,0.561 ZM18.693,9.929 L16.226,9.929 C16.105,7.332 15.436,5.041 14.407,3.374 C16.754,4.706 18.412,7.115 18.693,9.929 ZM9.368,2.439 L9.368,9.929 L5.914,9.929 C6.109,6.254 7.552,3.185 9.368,2.439 ZM9.368,11.632 L9.368,19.122 C7.552,18.376 6.109,15.307 5.914,11.632 L9.368,11.632 ZM11.071,19.122 L11.071,11.632 L14.525,11.632 C14.330,15.307 12.888,18.376 11.071,19.122 ZM11.071,9.929 L11.071,2.439 C12.888,3.185 14.330,6.254 14.525,9.929 L11.071,9.929 ZM6.032,3.374 C5.003,5.041 4.334,7.332 4.213,9.929 L1.747,9.929 C2.028,7.115 3.685,4.706 6.032,3.374 ZM1.747,11.632 L4.213,11.632 C4.334,14.228 5.003,16.519 6.032,18.188 C3.685,16.855 2.028,14.446 1.747,11.632 ZM14.407,18.188 C15.436,16.519 16.105,14.228 16.226,11.632 L18.693,11.632 C18.412,14.446 16.754,16.855 14.407,18.188 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="theme-dropdown-header-title">
+                                        <span>česky</span>
+                                    </div>
+                                    <div class="theme-dropdown-header-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="8px">
+                                            <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M11.661,1.556 L10.408,0.150 L6.164,4.761 L1.921,0.150 L0.668,1.556 L4.912,6.168 L6.164,7.574 L7.417,6.168 L11.661,1.556 Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="theme-dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/flag_de.png" alt="de">
+                                                deutsch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/flag_en.png" alt="de">
+                                                english
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-button">
+                            <a href="#" class="theme-button-icon">
+                                <div class="theme-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
+                                        <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M12.185,22.000 L7.852,22.000 L7.852,17.586 L17.668,7.586 L22.001,12.000 L12.185,22.000 ZM9.815,20.000 L11.372,20.000 L9.815,18.414 L9.815,20.000 ZM11.203,16.1000 L12.760,18.586 L19.225,12.000 L17.668,10.414 L11.203,16.1000 ZM13.742,2.000 L6.870,2.000 L6.870,7.000 L1.962,7.000 L1.962,20.000 L5.889,20.000 L5.889,22.000 L-0.001,22.000 L-0.001,4.586 L4.500,-0.000 L15.705,-0.000 L15.705,7.000 L13.742,7.000 L13.742,2.000 ZM4.907,2.414 L2.369,4.1000 L4.907,4.1000 L4.907,2.414 Z"/>
+                                    </svg>
+                                </div>
+                                <div class="theme-button theme-button-highlight disable-hover">
+                                    <span>Napsat poptávku</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="16px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 205, 0)" d="M19.167,15.449 C18.681,15.933 17.893,15.933 17.406,15.449 C17.163,15.206 17.042,14.889 17.042,14.572 C17.042,14.255 17.163,13.937 17.406,13.695 L22.905,8.218 L17.406,2.741 C16.920,2.257 16.920,1.472 17.406,0.987 C17.893,0.503 18.681,0.503 19.167,0.987 L26.427,8.218 L19.167,15.449 ZM13.549,15.449 C13.063,15.933 12.275,15.933 11.789,15.449 C11.545,15.206 11.424,14.889 11.424,14.572 C11.424,14.255 11.545,13.937 11.788,13.695 L17.287,8.218 L11.789,2.741 C11.302,2.257 11.302,1.472 11.788,0.987 C12.275,0.503 13.063,0.503 13.549,0.987 L20.809,8.218 L13.549,15.449 ZM7.932,15.449 C7.445,15.933 6.657,15.933 6.171,15.449 C5.928,15.206 5.806,14.889 5.806,14.572 C5.806,14.255 5.928,13.937 6.171,13.695 L11.670,8.218 L6.171,2.741 C5.685,2.257 5.685,1.472 6.171,0.987 C6.657,0.503 7.445,0.503 7.932,0.987 L15.191,8.218 L7.932,15.449 ZM2.314,15.449 C1.828,15.933 1.040,15.933 0.553,15.449 C0.310,15.206 0.189,14.889 0.189,14.572 C0.189,14.255 0.310,13.937 0.553,13.695 L6.052,8.218 L0.553,2.741 C0.067,2.257 0.067,1.472 0.553,0.987 C1.040,0.503 1.828,0.503 2.314,0.987 L9.574,8.218 L2.314,15.449 Z"/>
+                                    </svg>
+                                </div>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    
+    <div class="banner-homepage">
+        <div class="banner-homepage-menu d-none d-lg-block">
+            <div class="container">
+                <ul class="justify-content-start">
+                    <li class="banner-menu-link">
+                        <a href="">Kabiny UTV</a>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Kabiny vzv</a>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Kabiny pro Traktory</a>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Kabiny pro ATV</a>
+                    </li>
+                    <li class="dropdown-hover banner-menu-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="8px">
+                                <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M11.661,1.556 L10.409,0.150 L6.164,4.762 L1.920,0.150 L0.668,1.556 L4.912,6.168 L6.164,7.574 L7.417,6.168 L11.661,1.556 Z"/>
+                            </svg>
+                            O nás
+                        </a>
+                        <div class="dropdown-hover-menu">
+                            <div>
+                                <a href="" class="dropdown-hover-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                    Náš příběh
+                                </a>
+                                <a href="" class="dropdown-hover-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                    Kde pomáháme
+                                </a>
+                                <a href="" class="dropdown-hover-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                    Reference
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Novinky</a>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Galerie</a>
+                    </li>
+                    <li class="banner-menu-link">
+                        <a href="">Kontakty</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner-homepage-main">
+            <div class="container">
+                <div class="banner-homepage-owl owl-carousel owl-theme">
+                    <div class="banner-homepage-main-item">
+                        <div class="row">
+                            <div class="col-12 col-xl-6">
+                                <div class="banner-homepage-main-item-content">
+                                    <h2><span>Výroba kabin</span> pro terénní a volnočasové čtyřkolky a pracovní stroje</h2>
+                                    <a href="#" class="theme-button theme-button-bordered theme-button-highlight2">
+                                        Více o firmě
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="banner-homepage-main-item-image">
+                                    <img src="img/section-banner-item.png" alt="item" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-homepage-main-item">
+                        <div class="row">
+                            <div class="col-12 col-xl-6">
+                                <div class="banner-homepage-main-item-content">
+                                    <h2><span>Výroba kabin</span> pro terénní a volnočasové čtyřkolky a pracovní stroje</h2>
+                                    <a href="#" class="theme-button theme-button-bordered theme-button-highlight2">
+                                        Více o firmě
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="banner-homepage-main-item-image">
+                                    <img src="img/section-banner-item.png" alt="item" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="banner-homepage-categories ">
+            <div class="container container-extended">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="" class="banner-homepage-categories-item">
+                            <div class="banner-homepage-categories-item-image">
+                                <img src="img/section-categories-item1.png" alt="category">
+                            </div>
+                            <div class="banner-homepage-categories-item-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="24px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 205, 0)" d="M29.708,23.247 C28.952,24.000 27.726,24.000 26.970,23.247 C26.592,22.870 26.402,22.376 26.402,21.883 C26.402,21.389 26.592,20.896 26.969,20.519 L35.523,11.1000 L26.970,3.481 C26.213,2.728 26.214,1.507 26.969,0.753 C27.726,0.000 28.952,0.000 29.708,0.753 L41.000,11.1000 L29.708,23.247 ZM20.971,23.247 C20.214,24.000 18.988,24.000 18.232,23.247 C17.854,22.870 17.665,22.376 17.665,21.883 C17.665,21.389 17.854,20.896 18.232,20.519 L26.785,11.1000 L18.232,3.481 C17.475,2.728 17.476,1.507 18.232,0.753 C18.988,0.000 20.214,0.000 20.970,0.753 L32.262,11.1000 L20.971,23.247 ZM12.233,23.247 C11.476,24.000 10.250,24.000 9.494,23.247 C9.116,22.870 8.927,22.376 8.927,21.883 C8.927,21.389 9.116,20.896 9.494,20.519 L18.047,11.1000 L9.494,3.481 C8.738,2.728 8.738,1.507 9.494,0.753 C10.250,0.000 11.476,0.000 12.233,0.753 L23.525,11.1000 L12.233,23.247 ZM3.495,23.247 C2.739,24.000 1.513,24.000 0.756,23.247 C0.378,22.870 0.189,22.376 0.189,21.883 C0.189,21.389 0.378,20.896 0.756,20.519 L9.309,11.1000 L0.756,3.481 C0.000,2.728 0.000,1.507 0.756,0.753 C1.513,0.000 2.739,0.000 3.495,0.753 L14.787,11.1000 L3.495,23.247 Z"/>
+                                </svg>
+                                <h3>
+                                    Kabiny UTV
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="" class="banner-homepage-categories-item">
+                            <div class="banner-homepage-categories-item-image">
+                                <img src="img/section-categories-item2.png" alt="category">
+                            </div>
+                            <div class="banner-homepage-categories-item-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="24px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 205, 0)" d="M29.708,23.247 C28.952,24.000 27.726,24.000 26.970,23.247 C26.592,22.870 26.402,22.376 26.402,21.883 C26.402,21.389 26.592,20.896 26.969,20.519 L35.523,11.1000 L26.970,3.481 C26.213,2.728 26.214,1.507 26.969,0.753 C27.726,0.000 28.952,0.000 29.708,0.753 L41.000,11.1000 L29.708,23.247 ZM20.971,23.247 C20.214,24.000 18.988,24.000 18.232,23.247 C17.854,22.870 17.665,22.376 17.665,21.883 C17.665,21.389 17.854,20.896 18.232,20.519 L26.785,11.1000 L18.232,3.481 C17.475,2.728 17.476,1.507 18.232,0.753 C18.988,0.000 20.214,0.000 20.970,0.753 L32.262,11.1000 L20.971,23.247 ZM12.233,23.247 C11.476,24.000 10.250,24.000 9.494,23.247 C9.116,22.870 8.927,22.376 8.927,21.883 C8.927,21.389 9.116,20.896 9.494,20.519 L18.047,11.1000 L9.494,3.481 C8.738,2.728 8.738,1.507 9.494,0.753 C10.250,0.000 11.476,0.000 12.233,0.753 L23.525,11.1000 L12.233,23.247 ZM3.495,23.247 C2.739,24.000 1.513,24.000 0.756,23.247 C0.378,22.870 0.189,22.376 0.189,21.883 C0.189,21.389 0.378,20.896 0.756,20.519 L9.309,11.1000 L0.756,3.481 C0.000,2.728 0.000,1.507 0.756,0.753 C1.513,0.000 2.739,0.000 3.495,0.753 L14.787,11.1000 L3.495,23.247 Z"/>
+                                </svg>
+                                <h3>
+                                    Kabiny VZV
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="" class="banner-homepage-categories-item">
+                            <div class="banner-homepage-categories-item-image">
+                                <img src="img/section-categories-item3.png" alt="category">
+                            </div>
+                            <div class="banner-homepage-categories-item-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="24px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 205, 0)" d="M29.708,23.247 C28.952,24.000 27.726,24.000 26.970,23.247 C26.592,22.870 26.402,22.376 26.402,21.883 C26.402,21.389 26.592,20.896 26.969,20.519 L35.523,11.1000 L26.970,3.481 C26.213,2.728 26.214,1.507 26.969,0.753 C27.726,0.000 28.952,0.000 29.708,0.753 L41.000,11.1000 L29.708,23.247 ZM20.971,23.247 C20.214,24.000 18.988,24.000 18.232,23.247 C17.854,22.870 17.665,22.376 17.665,21.883 C17.665,21.389 17.854,20.896 18.232,20.519 L26.785,11.1000 L18.232,3.481 C17.475,2.728 17.476,1.507 18.232,0.753 C18.988,0.000 20.214,0.000 20.970,0.753 L32.262,11.1000 L20.971,23.247 ZM12.233,23.247 C11.476,24.000 10.250,24.000 9.494,23.247 C9.116,22.870 8.927,22.376 8.927,21.883 C8.927,21.389 9.116,20.896 9.494,20.519 L18.047,11.1000 L9.494,3.481 C8.738,2.728 8.738,1.507 9.494,0.753 C10.250,0.000 11.476,0.000 12.233,0.753 L23.525,11.1000 L12.233,23.247 ZM3.495,23.247 C2.739,24.000 1.513,24.000 0.756,23.247 C0.378,22.870 0.189,22.376 0.189,21.883 C0.189,21.389 0.378,20.896 0.756,20.519 L9.309,11.1000 L0.756,3.481 C0.000,2.728 0.000,1.507 0.756,0.753 C1.513,0.000 2.739,0.000 3.495,0.753 L14.787,11.1000 L3.495,23.247 Z"/>
+                                </svg>
+                                <h3>
+                                    Kabiny pro traktory
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <a href="" class="banner-homepage-categories-item">
+                            <div class="banner-homepage-categories-item-image">
+                                <img src="img/section-categories-item4.png" alt="category">
+                            </div>
+                            <div class="banner-homepage-categories-item-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="24px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 205, 0)" d="M29.708,23.247 C28.952,24.000 27.726,24.000 26.970,23.247 C26.592,22.870 26.402,22.376 26.402,21.883 C26.402,21.389 26.592,20.896 26.969,20.519 L35.523,11.1000 L26.970,3.481 C26.213,2.728 26.214,1.507 26.969,0.753 C27.726,0.000 28.952,0.000 29.708,0.753 L41.000,11.1000 L29.708,23.247 ZM20.971,23.247 C20.214,24.000 18.988,24.000 18.232,23.247 C17.854,22.870 17.665,22.376 17.665,21.883 C17.665,21.389 17.854,20.896 18.232,20.519 L26.785,11.1000 L18.232,3.481 C17.475,2.728 17.476,1.507 18.232,0.753 C18.988,0.000 20.214,0.000 20.970,0.753 L32.262,11.1000 L20.971,23.247 ZM12.233,23.247 C11.476,24.000 10.250,24.000 9.494,23.247 C9.116,22.870 8.927,22.376 8.927,21.883 C8.927,21.389 9.116,20.896 9.494,20.519 L18.047,11.1000 L9.494,3.481 C8.738,2.728 8.738,1.507 9.494,0.753 C10.250,0.000 11.476,0.000 12.233,0.753 L23.525,11.1000 L12.233,23.247 ZM3.495,23.247 C2.739,24.000 1.513,24.000 0.756,23.247 C0.378,22.870 0.189,22.376 0.189,21.883 C0.189,21.389 0.378,20.896 0.756,20.519 L9.309,11.1000 L0.756,3.481 C0.000,2.728 0.000,1.507 0.756,0.753 C1.513,0.000 2.739,0.000 3.495,0.753 L14.787,11.1000 L3.495,23.247 Z"/>
+                                </svg>
+                                <h3>
+                                    Kabiny pro ATV
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-aboutus section-background position-relative">
+        <span class="section-aboutus-background"></span>
+        <div class="section-aboutus-inner section">
+            <div class="container scroll-hidden">
+                <div class="row scroll-animation">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 d-none d-lg-block">
+                        <img src="img/section-about-photo.png" alt="image" class="section-aboutus-image pe-xl-4">
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="section-aboutus-texts">
+                            <h1 class="section-aboutus-title">Společnost DFK Cab</h1>
+                            <p class="section-aboutus-largeText">Společnost DFK Cab, s.r.o. se specializuje na výrobu kabin pro vysokozdvižné vozíky i pracovní, terénní, volnočasové a sportovní stroje širokého spektra značek a modelů.</p>
+                            <div class="section-output">
+                                <p>Díky stabilní kvalitě a konstrukčnímu řešení (chráněné průmyslovým vzorem) vyrábíme kabiny, které se postupně pro řadu značek z původní alternativy staly součástí jejich originálního příslušenství.<br>Naše přídavné kabiny spojuje odolnost jejich provedení, <b>použití kvalitních materiálů, chytré konstrukční řešení a vysoké užitné vlastnosti v dobrých cenových relacích.</b></p>
+                            </div>
+                        </div>
+                        <div class="section-aboutus-counters">
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-6 col-xl-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="26">0</span>
+                                            Let na trhu
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-xl-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="150">0</span>
+                                            zaměstnanců
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-xl-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="30">0</span>
+                                            značek, pro které vyrábíme
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-news section scroll-hidden">
+        <div class="container scroll-animation">
+            <div class="section-title">
+                <h2>Co je u nás nového</h2>
+            </div>
+            <div class="row section-news-row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="section-news-item">
+                        <div class="position-relative">
+                            <a href="#" class="section-news-item-image">
+                                <img src="img/section-news-item1-image.png" alt="news" class="img-fluid">
+                            </a>
+                            <div class="section-news-item-date">23.7.2019</div>    
+                        </div>
+                        <div class="section-news-item-body">
+                            <a href="#" class="section-news-item-title">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="section-news-item-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                <a href="" class="section-news-item-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="8px">
+                                        <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M24.971,4.001 L25.001,3.973 L20.942,0.236 C20.774,0.084 20.549,-0.001 20.310,-0.001 C20.071,-0.001 19.847,0.084 19.678,0.236 L19.651,0.260 C19.482,0.414 19.389,0.618 19.389,0.835 C19.389,1.051 19.482,1.255 19.651,1.408 L21.534,3.172 L0.893,3.172 C0.399,3.172 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.893,4.829 L21.534,4.829 L19.651,6.594 C19.482,6.747 19.389,6.950 19.389,7.167 C19.389,7.383 19.482,7.588 19.651,7.741 L19.678,7.765 C19.847,7.919 20.071,8.002 20.310,8.002 C20.549,8.002 20.774,7.919 20.942,7.765 L25.001,4.028 L24.971,4.001 Z"/>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="section-news-item">
+                        <div class="position-relative">
+                            <a href="#" class="section-news-item-image">
+                                <img src="img/section-news-item2-image.png" alt="news" class="img-fluid">
+                            </a>
+                            <div class="section-news-item-date">23.7.2019</div>    
+                        </div>
+                        <div class="section-news-item-body">
+                            <a href="#" class="section-news-item-title">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="section-news-item-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                <a href="" class="section-news-item-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="8px">
+                                        <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M24.971,4.001 L25.001,3.973 L20.942,0.236 C20.774,0.084 20.549,-0.001 20.310,-0.001 C20.071,-0.001 19.847,0.084 19.678,0.236 L19.651,0.260 C19.482,0.414 19.389,0.618 19.389,0.835 C19.389,1.051 19.482,1.255 19.651,1.408 L21.534,3.172 L0.893,3.172 C0.399,3.172 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.893,4.829 L21.534,4.829 L19.651,6.594 C19.482,6.747 19.389,6.950 19.389,7.167 C19.389,7.383 19.482,7.588 19.651,7.741 L19.678,7.765 C19.847,7.919 20.071,8.002 20.310,8.002 C20.549,8.002 20.774,7.919 20.942,7.765 L25.001,4.028 L24.971,4.001 Z"/>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="section-news-item">
+                        <div class="position-relative">
+                            <a href="#" class="section-news-item-image">
+                                <img src="img/section-news-item3-image.png" alt="news" class="img-fluid">
+                            </a>
+                            <div class="section-news-item-date">23.7.2019</div>    
+                        </div>
+                        <div class="section-news-item-body">
+                            <a href="#" class="section-news-item-title">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="section-news-item-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                <a href="" class="section-news-item-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="8px">
+                                        <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M24.971,4.001 L25.001,3.973 L20.942,0.236 C20.774,0.084 20.549,-0.001 20.310,-0.001 C20.071,-0.001 19.847,0.084 19.678,0.236 L19.651,0.260 C19.482,0.414 19.389,0.618 19.389,0.835 C19.389,1.051 19.482,1.255 19.651,1.408 L21.534,3.172 L0.893,3.172 C0.399,3.172 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.893,4.829 L21.534,4.829 L19.651,6.594 C19.482,6.747 19.389,6.950 19.389,7.167 C19.389,7.383 19.482,7.588 19.651,7.741 L19.678,7.765 C19.847,7.919 20.071,8.002 20.310,8.002 C20.549,8.002 20.774,7.919 20.942,7.765 L25.001,4.028 L24.971,4.001 Z"/>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="" class="theme-button theme-button-highlight2 theme-button-arrow">
+                    Další novinky
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="8px">
+                        <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M24.971,4.001 L25.001,3.973 L20.943,0.236 C20.774,0.084 20.549,-0.001 20.310,-0.001 C20.072,-0.001 19.847,0.084 19.678,0.236 L19.651,0.260 C19.482,0.414 19.389,0.618 19.389,0.834 C19.389,1.051 19.482,1.255 19.651,1.408 L21.534,3.172 L0.893,3.172 C0.399,3.172 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.893,4.829 L21.534,4.829 L19.651,6.594 C19.482,6.747 19.389,6.950 19.389,7.167 C19.389,7.383 19.482,7.588 19.651,7.741 L19.678,7.765 C19.847,7.919 20.072,8.002 20.310,8.002 C20.549,8.002 20.774,7.919 20.943,7.765 L25.001,4.028 L24.971,4.001 Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="24px">
+                                    <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M13.850,22.525 L13.015,23.798 L12.181,22.525 C11.487,21.468 8.028,16.070 8.028,13.670 C8.028,10.900 10.266,8.647 13.015,8.647 C15.764,8.647 17.1000,10.900 17.1000,13.670 C17.1000,16.070 14.542,21.468 13.850,22.525 ZM13.015,10.662 C11.368,10.662 10.028,12.011 10.028,13.670 C10.028,14.770 11.579,17.733 13.015,20.091 C14.449,17.733 16.000,14.770 16.000,13.670 C16.000,12.011 14.661,10.662 13.015,10.662 ZM11.420,13.502 C11.420,12.615 12.133,11.895 13.015,11.895 C13.894,11.895 14.609,12.615 14.609,13.502 C14.609,14.390 13.894,15.108 13.015,15.108 C12.133,15.108 11.420,14.390 11.420,13.502 ZM11.1000,5.850 L2.000,5.850 L2.000,16.933 L7.000,16.933 L7.000,18.948 L2.000,18.948 L2.000,20.962 L9.000,20.962 L9.000,22.978 L2.000,22.978 C0.897,22.978 0.000,22.073 0.000,20.962 L0.000,2.828 C0.000,1.717 0.897,0.813 2.000,0.813 L11.1000,0.813 C13.102,0.813 14.000,1.717 14.000,2.828 L14.000,6.858 L11.1000,6.858 L11.1000,5.850 ZM11.1000,2.828 L2.000,2.828 L2.000,3.835 L11.1000,3.835 L11.1000,2.828 Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Rychlý kontakt</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <div class="section-output">
+                                <p><b>DFK Cab, s.r.o.</b><br>
+                                Za Olšávkou 391, 686 01<br>
+                                Uherské Hradiště- Sady<br>
+                                Česká Republika</p>
+                                <p><b>Fakturační adresa:</b><br>
+                                Na Florenci 2116/15,  110 00 Praha 1</p>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="footer-contact-item footer-contact-item-telmail">
+                                    <div class="theme-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px">
+                                            <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M12.000,10.008 L12.000,6.012 L16.000,6.012 L16.000,10.008 L12.000,10.008 ZM12.000,0.019 L16.000,0.019 L16.000,4.015 L12.000,4.015 L12.000,0.019 ZM5.1000,12.005 L10.000,12.005 L10.000,16.001 L5.1000,16.001 L5.1000,12.005 ZM5.1000,6.012 L10.000,6.012 L10.000,10.008 L5.1000,10.008 L5.1000,6.012 ZM5.1000,0.019 L10.000,0.019 L10.000,4.015 L5.1000,4.015 L5.1000,0.019 ZM-0.000,6.012 L4.000,6.012 L4.000,10.008 L-0.000,10.008 L-0.000,6.012 ZM-0.000,-0.001 L4.000,-0.001 L4.000,3.994 L-0.000,3.994 L-0.000,-0.001 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="footer-contact-item-phone">+420 572 520 074</a>
+                                        <a href="#" class="footer-contact-item-email">info@dfk.cz</a>
+                                    </div>
+                                </div>
+                                <a href="" class="footer-contact-item footer-contact-item-request">
+                                    <div class="theme-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
+                                            <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M12.185,22.000 L7.852,22.000 L7.852,17.586 L17.668,7.586 L22.001,12.000 L12.185,22.000 ZM9.815,20.000 L11.372,20.000 L9.815,18.414 L9.815,20.000 ZM11.203,17.000 L12.760,18.586 L19.225,12.000 L17.668,10.414 L11.203,17.000 ZM13.742,2.000 L6.870,2.000 L6.870,7.000 L1.962,7.000 L1.962,20.000 L5.889,20.000 L5.889,22.000 L-0.001,22.000 L-0.001,4.586 L4.500,-0.000 L15.705,-0.000 L15.705,7.000 L13.742,7.000 L13.742,2.000 ZM4.907,2.414 L2.369,4.1000 L4.907,4.1000 L4.907,2.414 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="fw-bold">Napsat poptávku</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="14px">
+                                    <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M0.000,14.000 L0.000,11.1000 L15.1000,11.1000 L15.1000,14.000 L0.000,14.000 ZM0.000,6.000 L15.1000,6.000 L15.1000,8.000 L0.000,8.000 L0.000,6.000 ZM0.000,0.000 L15.1000,0.000 L15.1000,1.1000 L0.000,1.1000 L0.000,0.000 Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Menu</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">
+                                        Úvod
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Služby                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        O nás
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Reference
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Fotogalerie
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ceník
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="23px">
+                                    <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M13.475,12.633 C14.038,13.196 14.789,13.507 15.589,13.507 C16.389,13.507 17.139,13.196 17.703,12.632 L21.827,8.502 C22.992,7.334 22.992,5.434 21.827,4.267 L18.679,1.114 C17.554,-0.014 15.576,-0.014 14.451,1.114 L10.327,5.244 C9.764,5.808 9.453,6.560 9.453,7.362 C9.453,8.164 9.764,8.916 10.327,9.480 L11.189,10.344 L10.074,11.461 L9.211,10.597 C8.086,9.468 6.108,9.468 4.983,10.597 L0.859,14.727 C0.295,15.291 -0.015,16.043 -0.015,16.844 C-0.015,17.646 0.295,18.398 0.859,18.962 L4.007,22.115 C4.570,22.679 5.321,22.990 6.121,22.990 C6.921,22.990 7.671,22.679 8.235,22.114 L12.359,17.984 C13.524,16.816 13.524,14.917 12.359,13.749 L11.483,12.872 L12.599,11.755 L13.475,12.633 ZM10.949,15.160 C11.337,15.550 11.337,16.184 10.949,16.573 L6.825,20.702 C6.452,21.077 5.790,21.076 5.416,20.703 L2.268,17.550 C2.081,17.363 1.978,17.112 1.978,16.844 C1.978,16.576 2.081,16.325 2.268,16.138 L6.392,12.008 C6.579,11.820 6.829,11.718 7.097,11.718 C7.365,11.718 7.615,11.820 7.801,12.008 L8.665,12.872 L6.419,15.121 L7.829,16.532 L10.074,14.284 L10.949,15.160 ZM11.737,8.068 C11.550,7.881 11.447,7.630 11.447,7.362 C11.447,7.094 11.550,6.843 11.737,6.656 L15.860,2.525 C16.047,2.338 16.297,2.235 16.565,2.235 C16.833,2.235 17.083,2.338 17.270,2.525 L20.417,5.678 C20.806,6.068 20.806,6.701 20.417,7.090 L16.293,11.220 C15.920,11.595 15.258,11.594 14.884,11.220 L14.008,10.343 L15.802,8.547 L14.393,7.136 L12.599,8.932 L11.737,8.068 Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Odkazy</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">
+                                        Úvod
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Služby                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        O nás
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Reference
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Fotogalerie
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ceník
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="15px">
+                                    <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M23.282,8.488 C20.063,12.664 16.255,14.871 12.268,14.871 C8.281,14.871 4.473,12.664 1.254,8.488 L0.784,7.878 L1.254,7.267 C4.471,3.090 8.280,0.883 12.268,0.883 C16.256,0.883 20.065,3.090 23.282,7.267 L23.752,7.878 L23.282,8.488 ZM12.268,2.895 C9.129,2.895 6.060,4.614 3.357,7.878 C6.061,11.140 9.130,12.859 12.268,12.859 C15.406,12.859 18.475,11.140 21.179,7.878 C18.476,4.614 15.407,2.895 12.268,2.895 ZM11.206,3.805 L15.270,7.829 L11.206,11.853 L11.206,3.805 Z"/>
+                               </svg>
+                            </div>
+                            <div>
+                                <h3>Sledujte nás</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <div class="footer-socials">
+                                <ul>
+                                    <li>
+                                        <a href="" class="theme-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px">
+                                                <image x="0px" y="0px" width="10px" height="20px"  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAMAAACDMFxkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAaVBMVEU5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4D////YXEWfAAAAIXRSTlMAImp/d2Vx+/A8/pq+mZC7vcOklmSq69yIsOFN0qUOEQsYuNhNAAAAAWJLR0QiXWVcrAAAAAd0SU1FB+cIBxIjKYmLavEAAABZSURBVAjXrcxHFoAgEANQ7Niw4NgVc/9Lyig+LmA2+Yu8CMEJwihOHqUZAMnKC3wsLapaMRugFW86oPfU3APRCExEs9BwWTwVDySwEm0834HDPfzK05jL1g3YaQtvVn2VQgAAAABJRU5ErkJggg==" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="theme-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="13px">
+                                                <image x="0px" y="0px" width="19px" height="13px"  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAMAAAB8UqUVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAq1BMVEU5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4A5S4D////5cmcxAAAAN3RSTlMAJWJwf4iMmZF5akUBT/uzwfTjVBGHKaz+cR41u3x3KKoQnH0G/dv3Z99ElO0JDY/J4e7w5dE32xPqdAAAAAFiS0dEOKAHpdYAAAAHdElNRQfnCAcSJA8Ux3nLAAAAf0lEQVQY012O1w7CMBAEx4DpvcWEEnqvpuT//wxIjkR4n+ZGK+0BKpPNaZ0vFLXWpXKlCtTq4V8aH9cMnShoRdBO2x26MfT6nhE3wBcHw1GMY1TiYCKY9oKpEZyJ8+e/lQXLVQTrTbK7hZ373x4Ojjqe4Hy53uz9exlrH0/vxRuonCg8BUX8dQAAAABJRU5ErkJggg==" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="theme-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px">
+                                                <path fill-rule="evenodd"  fill="rgb(57, 75, 128)" d="M14.437,18.993 L4.175,18.993 C2.051,18.993 0.322,17.283 0.322,15.179 L0.322,4.477 C0.322,2.374 2.051,0.663 4.175,0.663 L14.437,0.663 C16.562,0.663 18.291,2.374 18.291,4.477 L18.291,15.179 C18.291,17.283 16.562,18.993 14.437,18.993 ZM16.740,4.477 C16.740,3.240 15.707,2.235 14.437,2.235 L4.175,2.235 C2.906,2.235 1.872,3.240 1.872,4.477 L1.872,15.179 C1.872,16.415 2.906,17.422 4.175,17.422 L14.437,17.422 C15.707,17.422 16.740,16.415 16.740,15.179 L16.740,4.477 ZM14.348,5.944 C13.741,5.944 13.249,5.445 13.249,4.832 C13.249,4.217 13.741,3.718 14.348,3.718 C14.955,3.718 15.446,4.217 15.446,4.832 C15.446,5.445 14.955,5.944 14.348,5.944 ZM9.306,14.586 C6.716,14.586 4.609,12.452 4.609,9.828 C4.609,7.204 6.716,5.071 9.306,5.071 C11.896,5.071 14.004,7.204 14.004,9.828 C14.004,12.452 11.896,14.586 9.306,14.586 ZM9.306,6.641 C7.570,6.641 6.160,8.071 6.160,9.828 C6.160,11.585 7.570,13.014 9.306,13.014 C11.041,13.014 12.453,11.585 12.453,9.828 C12.453,8.071 11.041,6.641 9.306,6.641 Z"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-6 mb-5 mb-xl-0">
+                    <div class="section-map">
+                        <div class="position-relative w-fit">
+                            <div>
+                                <img src="img/section-map-image.png" alt="map" class="img-fluid">
+                            </div>
+                            <div class="section-map-pins">
+                                <a href="#" class="section-map-pins-item" style="top: 34%; left: 15%;">
+                                    <span></span>
+                                </a>    
+                                <a href="#" class="section-map-pins-item" style="bottom: 22%; left: 27%;">
+                                    <span></span>
+                                </a>    
+                                <a href="#" class="section-map-pins-item" style="top: 32%; left: 49%;">
+                                    <span></span>
+                                </a>    
+                                <a href="#" class="section-map-pins-item" style="top: 19%; left: 47%;">
+                                    <span></span>
+                                </a>    
+                                <a href="#" class="section-map-pins-item" style="top: 24%; right: 23%;">
+                                    <span></span>
+                                </a>     
+                                <a href="#" class="section-map-pins-item" style="top: 53%; right: 40%;">
+                                    <span></span>
+                                </a>    
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="section-newsletter">
+                        <div class="section-newsletter-heading">
+                            <h3>Newsletter</h3>
+                            <p>Máte zájem o zasílání novinek?</p>
+                        </div>
+                        <div class="section-newsletter-form">
+                            <form class="theme-form">
+                                <div class="d-flex">
+                                    <input type="text" placeholder="Emailová adresa" class="me-2">
+                                    <button class="theme-button theme-button-highlight2 theme-button-arrow text-uppercase flex-shrink-0">
+                                        <span class="d-none d-sm-block">Přihlásit</span>
+                                        <span class="d-sm-none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="8px" class="m-0">
+                                                <path fill-rule="evenodd" fill="rgb(57, 75, 128)" d="M24.971,4.001 L25.001,3.973 L20.943,0.236 C20.774,0.084 20.549,-0.001 20.310,-0.001 C20.072,-0.001 19.847,0.084 19.678,0.236 L19.651,0.260 C19.482,0.414 19.389,0.618 19.389,0.834 C19.389,1.051 19.482,1.255 19.651,1.408 L21.534,3.172 L0.893,3.172 C0.399,3.172 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.893,4.829 L21.534,4.829 L19.651,6.594 C19.482,6.747 19.389,6.950 19.389,7.167 C19.389,7.383 19.482,7.588 19.651,7.741 L19.678,7.765 C19.847,7.919 20.072,8.002 20.310,8.002 C20.549,8.002 20.774,7.919 20.943,7.765 L25.001,4.028 L24.971,4.001 Z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <div class="container">
+            <p>COPYRIGHT © 2023 dfk.cz | TVORBA WWW STRÁNEK <a href="https://machin.cz/">MACHIN.CZ</a></p>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.section-aboutus {
+    &-background {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background-color: #dde2ed;
+    }
+    &-inner {
+        background-image: url("../img/section-about-background.png");
+        background-repeat: no-repeat;
+        max-width: 1920px;
+        margin: 0 auto;
+        @include media("xxl") {
+            background-size: 50% 100%;
+        }
+        @include media("lg") {
+            background-image: none;
+        }
+    }
+    &-texts {
+        h1 {
+            color: var(--highlight-color);
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+            letter-spacing: -0.05rem;
+            @include media("md") {
+                font-size: 38px;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .section-output {
+            p, li {
+                font-size: 16px;
+            }
+        }
+    }
+    &-largeText {
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 2.5rem;
+        color: var(--primary-color);
+        @include media("md") {
+            font-size: 19px;
+            line-height: 30px;
+            margin-bottom: 1.5rem;
+        }
+    }
+    @include min-media("xxl") {
+        &-image {
+            margin-left: -5rem;
+            max-width: calc(100% + 5rem);
+        }    
+    }
+    &-counters {
+        margin-top: 5rem;
+        @include media("xxl") {
+            margin-top: 3.5rem;
+        }
+        @include media("md") {
+            margin-top: 2rem;
+        }
+        & > .row {
+            margin: 0 -1.5rem;
+            @media (max-width: 1500px) {
+                margin: 0 -.5rem;
+            }
+            & > div {
+                padding: 0 1.5rem;
+                @media (max-width: 1500px) {
+                    padding: 0 .5rem;
+                }
+                &:nth-child(1) > div {
+                    background: conic-gradient(from 45deg, rgb(251,210,10), rgb(255,231,114));
+                }
+                &:nth-child(2) > div {
+                    background: conic-gradient(from 135deg, rgb(251,210,10), rgb(255,231,114));
+                }
+                &:nth-child(3) > div {
+                    background: conic-gradient(from 205deg, rgb(251,210,10), rgb(255,231,114));
+                }
+            }
+        }
+        &-item {
+            border-radius: 50%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            p {
+                color: var(--highlight-color);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 0;
+                margin-top: 3rem;
+                @include media("xxl") {
+                    margin-top: 2.5rem;
+                }
+                @media (max-width: 1500px) {
+                    margin-top: 2.25rem;
+                }
+                @include media("xl") {
+                    margin-top: 0;
+                    @include flexCenterDir(column);
+                }
+                @include media("sm") {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                span {
+                    font-size: 50px;
+                    line-height: 50px;
+                    font-weight: 700;
+                    display: block;
+                    @include media("sm") {
+                        font-size: 44px;
+                        line-height: 44px;
+                    }
+                }
+            }
+        }
+    }
+}

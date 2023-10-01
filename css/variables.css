@@ -1,0 +1,50 @@
+:root {
+    --highlight-color: #394b80;
+    --button-color: #394b80;
+    --highlight-color2: #fed50a;
+    --background-color: #ffffff;
+    --dropdown-color: #f3f3f3;
+    --dropdown-icon-color: #cdcdcd;
+    --dropdown-content-color: #fbfbfb;
+    --primary-color: #000;
+    --secondary-color: #ffffff;
+    --secondary-color-opacity: #ffffff57;
+    --border-color-light: #ffffff14;
+    --border-color: #e1e4eb;
+    --paragraph-color: #616161;
+    --section-color: #f3f3f3;
+    --section-color2: #f1f4fc;
+
+    --table-color: #f6f9fc;
+    --table-header-color: #e8f2fc;
+    --menu-color: #000;
+    --background-secondary-color: #e8f2fc;
+    --section-preTitle-background-color: #f4f4f4;
+    --section2-preTitle-background2-color: #ffffff;
+    --section-preTitle-color: #575656;
+    --services-boxes-color: #f1f8fd;
+    --news-date-color: #ababab;
+    --news-border-color: #eaecf0;
+    --highlight-light-color: #e1f3ff;
+    --socials-icon-color: #343434;
+    --footer-icon-color: #808080;
+    --footer-color: #c9b6a6;
+    --copyright-color: #a2a2a2;
+    --border-radius: 10px;
+    --numbers-number-color: #394b80;
+    --link-color: #394b80;
+    --numbers-number-background: #fff;
+    
+    --font: "Poppins", sans-serif;
+    --font2: "Poppins", sans-serif;
+    --button-radius: 5px;
+    --border-radius: 7px;
+    --input-radius: 5px;
+    --gallery-radius: 10px;
+    --popup-radius: 15px;
+    --line-color-light: #ffffff38;
+
+    --banner-homepage-background: url("../img/section-banner-background.png");
+    --footer-background: url("../img/footer-background.png");
+}
+  

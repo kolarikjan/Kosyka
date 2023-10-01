@@ -1,0 +1,43 @@
+.contactForm {
+    form {
+        padding: 5rem 7rem;
+        background-color: var(--section-color2);
+        border-radius: var(--input-radius);
+        @include media("md") {
+            padding: 3rem 3rem 3rem;
+        }
+        @include media("sm") {
+            padding: 3rem 2rem 3rem;
+        }
+        input, .form__input {
+            &:not([type="submit"]) {
+                padding: 1rem 1.5rem;
+                color: var(--primary-color);
+                font-size: 14px;
+                width: 100%;
+                font-weight: 500;
+                border: 1px solid transparent;
+                margin-bottom: 30px;
+                border-radius: var(--input-radius);
+                @include media("xl") {
+                    margin-bottom: 10px;
+                }
+            }
+            &::placeholder {
+                color: var(--primary-color);
+                font-weight: 500;
+            }
+        }
+        textarea {
+            @extend .form__input;
+            min-height: 180px;
+            resize: none;
+        }
+        input[type="submit"] {
+            margin: 30px auto 0;
+            @include media("md") {
+                margin: 15px auto 0;
+            }
+        }
+    }
+}

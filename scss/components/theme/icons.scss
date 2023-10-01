@@ -1,0 +1,37 @@
+.theme-icon {
+    background-color: var(--highlight-color2);
+    border-radius: var(--button-radius);
+    width: 55px;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    transition: 0.25s;
+    @include flexCenter();
+    svg {
+        max-width: 40px;
+        max-height: 40px;
+        &, & > path {
+            fill: var(--highlight-color);
+        }
+    }
+    &-small {
+        width: 40px;
+        height: 40px;
+        svg {
+            max-width: 25px;
+            max-height: 25px;
+        }
+    }
+    &-color {
+        &-light {
+            background-color: var(--section-color2);
+        }
+    }
+    &-hover:hover {
+        background-color: var(--highlight-color);
+        svg {
+            &, & > path {
+                fill: var(--highlight-color2);
+            }
+        }
+    }
+}

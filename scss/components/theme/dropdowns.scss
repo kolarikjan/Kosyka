@@ -1,0 +1,80 @@
+.theme-dropdown {
+    position: relative;
+    &-header {
+        background-color: var(--dropdown-color);
+        border-radius: var(--button-radius);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        cursor: pointer;
+        &-icon {
+            margin-right: .65rem;
+            path {
+                transition-duration: 0.1s;
+                fill: var(--dropdown-icon-color);
+            }
+        }
+        &-title {
+            &, span {
+                color: var(--primary-color);
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+        &-arrow {
+            margin-left: .65rem;
+            svg {
+                transition-duration: 0.1s;
+                path {
+                    fill: var(--highlight-color);
+                }
+            }
+        }
+    }
+    &:hover &-header-icon {
+        path {
+            fill: var(--highlight-color);
+        }
+    }
+    &-content {
+        background-color: var(--dropdown-content-color);
+        border-radius: var(--button-radius);
+        display: none;
+        position: absolute;
+        z-index: 9999;
+        left: 0;
+        right: 0;
+        min-width: 100%;
+        width: max-content;
+        padding: 1rem .5rem;
+        margin-top: .25rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            a {
+                color: var(--primary-color);
+                font-size: 15px;
+                font-weight: 500;
+                padding: 0 .5rem;
+                border-radius: 5px;
+                transition-duration: 0.1s;
+                &:hover {
+                    text-decoration: none;
+                    background-color: var(--highlight-color);
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+    &.active &-header-icon path {
+        fill: var(--highlight-color);
+    }
+    &.active > &-content {
+        display: block;
+    }
+    &.active &-header-arrow svg {
+        transform: rotate(180deg);
+    }
+}

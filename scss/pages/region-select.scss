@@ -1,0 +1,98 @@
+.region-select {
+    background-image: url("../img/section-home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    &-logobox {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+    }
+    &-main {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+    &-dropdown {
+        min-width: 280px;
+        & > p {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &-header {
+            background-color: var(--highlight-color2);
+            border-radius: var(--border-radius);
+            padding: .25rem;
+            display: flex;
+            cursor: pointer;
+            &-name {
+                display: flex;
+                align-items: center;
+                padding: 1rem 1rem;
+                svg {
+                    margin-right: 1rem;
+                    flex-shrink: 0;
+                }
+                span {
+                    font-size: 16px;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    min-width: 160px;
+                }
+            }
+            &-arrow {
+                @include flexCenter();
+                border-left: 1px solid var(--secondary-color);
+                padding: 0 1.25rem;
+                flex-shrink: 0;
+                margin-left: auto;
+            }
+        }
+        &-body {
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 1rem .75rem;
+            position: absolute;
+            top: 130px;
+            left: 0;
+            right: 0;
+            display: none;
+            &-item {
+                display: flex;
+                align-items: center;
+                padding: .5rem .75rem;
+                font-weight: 500;
+                color: var(--primary-color);
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--border-color);
+                }
+                &::after {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='27px' height='16px'%3E%3Cpath fill-rule='evenodd' fill='rgb(57, 75, 128)' d='M19.167,15.449 C18.681,15.933 17.893,15.933 17.406,15.449 C17.163,15.206 17.042,14.889 17.042,14.572 C17.042,14.255 17.163,13.937 17.406,13.695 L22.905,8.218 L17.406,2.741 C16.920,2.257 16.920,1.472 17.406,0.987 C17.893,0.503 18.681,0.503 19.167,0.987 L26.427,8.218 L19.167,15.449 ZM13.549,15.449 C13.063,15.933 12.275,15.933 11.789,15.449 C11.545,15.206 11.424,14.889 11.424,14.572 C11.424,14.255 11.545,13.937 11.788,13.695 L17.287,8.218 L11.789,2.741 C11.302,2.257 11.302,1.472 11.788,0.987 C12.275,0.503 13.063,0.503 13.549,0.987 L20.809,8.218 L13.549,15.449 ZM7.932,15.449 C7.445,15.933 6.657,15.933 6.171,15.449 C5.928,15.206 5.806,14.889 5.806,14.572 C5.806,14.255 5.928,13.937 6.171,13.695 L11.670,8.218 L6.171,2.741 C5.685,2.257 5.685,1.472 6.171,0.987 C6.657,0.503 7.445,0.503 7.932,0.987 L15.191,8.218 L7.932,15.449 ZM2.314,15.449 C1.828,15.933 1.040,15.933 0.553,15.449 C0.310,15.206 0.189,14.889 0.189,14.572 C0.189,14.255 0.310,13.937 0.553,13.695 L6.052,8.218 L0.553,2.741 C0.067,2.257 0.067,1.472 0.553,0.987 C1.040,0.503 1.828,0.503 2.314,0.987 L9.574,8.218 L2.314,15.449 Z'%3E%3C/path%3E%3C/svg%3E");
+                    display: inline-block;
+                    width: 25px;
+                    height: 20px;
+                    opacity: 0;
+                    transition-duration: 0.2s;
+                    margin-left: 1rem;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: var(--highlight-color);
+                    &::after {
+                        opacity: 1;
+                        margin-left: .5rem;
+                    }
+                }
+            }
+        }
+        .active &-body {
+            display: block;
+        }
+    }
+}

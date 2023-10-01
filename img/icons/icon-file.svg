@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 48" width="43" height="48">
+	<title>Cert</title>
+	<style>
+		.s0 { fill: #723e98 } 
+	</style>
+	<g id="Cert">
+		<path id="-e-icon-file" fill-rule="evenodd" class="s0" d="m2 43h21v2h-23v-37.4l7.6-7.6h26.4v15h-2v-13h-22v8h-8zm0.4-35h5.6v-5.6zm40.6 11v18.7l-13 10.3-13-10.3v-18.7h7v3h2v-5h8v5h2v-3zm-2 2h-3v3h-6v-5h-4v5h-6v-3h-3v15.7l10 8v-18.7h2v18.7l10-8z"/>
+	</g>
+</svg>

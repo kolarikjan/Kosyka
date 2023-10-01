@@ -1,0 +1,54 @@
+.documents {
+    &-search {
+        margin-bottom: 5rem;
+        max-width: 30%;
+        @include media("xl") {
+            max-width: 50%;
+        }
+        @include media("md") {
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+    &-content > &-box {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+            @include media("md") {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &-box {
+        &-header {
+            margin-bottom: 2.25rem;
+            @include media("md") {
+                margin-bottom: 1.75rem;
+            }
+        }
+        &-body {
+            border: 1px solid var(--border-color);
+            & > a:not(:last-child) {
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+        &-line {
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            padding: .9rem 1rem .9rem 1.5rem;
+            font-weight: 500;
+            svg {
+                flex-shrink: 0;
+                margin-left: .75rem;
+                path {
+                    fill: var(--highlight-color);
+                }
+            }
+            &:hover {
+                background-color: var(--border-color);
+                text-decoration: none;
+                color: var(--primary-color);
+            }
+        }
+    }
+}

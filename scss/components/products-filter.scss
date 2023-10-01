@@ -1,0 +1,15 @@
+.products-filter {
+    background-color: var(--highlight-color);
+    padding: 1.5rem 0;
+    &-title {
+        color: var(--secondary-color);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    @include min-media("sm") {
+        select {
+            min-width: 320px;
+        }
+    }
+}
