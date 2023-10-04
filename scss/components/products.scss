@@ -1,0 +1,60 @@
+.section-products {
+    background-image: url("../../img/section-products-background.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    @include media("lg") {
+        background-size: cover;
+        background-position: center;
+        padding-top: 0;
+    }
+    &-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+            width: 25%;
+            @include media("xl") {
+                width: calc(100% / 3);
+            }
+            @include media("md") {
+                width: calc(100% / 2);
+            }
+            position: relative;
+            overflow: hidden;
+            display: block;
+            max-height: 320px;
+            span {
+                font-size: 22px;
+                letter-spacing: -.5px;
+                line-height: 32px;
+                color: var(--secondary-color);
+                font-weight: 600;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+            img {
+                transition-duration: 0.15s;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transform: scale(1.01);
+            }
+            &:hover img {
+                transform: scale(1.15);
+            }
+        }
+    }
+    &-texts {
+        padding-left: 5rem;
+        @include media("xxl") {
+            padding-left: 2rem;
+        }
+        @include media("xl") {
+            padding-left: 0;
+            margin-top: 4rem;
+        }
+    }
+}

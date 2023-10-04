@@ -96,38 +96,6 @@ const initializeCompanySlider = (itemsCount) => {
     });
 }
 
-
-const companySliderChanger = (dir) => {
-    if (dir === "next") {
-        if ($(".company-timeline-slider-top .company-timeline-item.active").length > $(".company-timeline-slider-bottom .company-timeline-item.active").length) {
-            if (companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active", dir, false) || companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active", dir, false)) {
-                $(".company-timeline-slider-top .company-timeline-item.active")[0].classList.remove("active");
-                companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active",dir);
-            }
-        }    
-        else {
-            if (companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active", dir, false) || companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active", dir, false)) {
-                $(".company-timeline-slider-bottom .company-timeline-item.active")[0].classList.remove("active");
-                companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active",dir);
-            }
-        }
-    } else {
-        if ($(".company-timeline-slider-top .company-timeline-item.active").length > $(".company-timeline-slider-bottom .company-timeline-item.active").length) {
-            if (companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active", dir, false) || companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active", dir, false)) {
-                console.log($(".company-timeline-slider-top .company-timeline-item.active").length);
-                $(".company-timeline-slider-top .company-timeline-item.active")[$(".company-timeline-slider-top .company-timeline-item.active").length-1].classList.remove("active");
-                companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active",dir);
-            }
-        }    
-        else {
-            if (companyFindNonActiveItem(".company-timeline-slider-bottom .company-timeline-item.active", dir, false) || companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active", dir, false)) {
-                $(".company-timeline-slider-bottom .company-timeline-item.active")[$(".company-timeline-slider-bottom .company-timeline-item.active").length-1].classList.remove("active");
-                companyFindNonActiveItem(".company-timeline-slider-top .company-timeline-item.active",dir);
-            }
-        }
-    }
-}
-
 const catalogImages = () => {
     $(".products-catalog-item-imagebox").each(function(index){
         const img = new Image();
@@ -187,6 +155,12 @@ $(document).ready(function () {
         }
     });
 
+    $(".header-menu-dropdown").click(function (e) { 
+        if($(window).width() < 993) {
+            e.preventDefault();
+        }
+    });
+
     initializeCompanySlider(itemsCount);
 
     $(".company-timeline-slider-top .company-timeline-item").each(function(index){
@@ -223,7 +197,7 @@ $(document).ready(function () {
         companySliderChanger("next");
     });
 
-    $('.banner-homepage-owl').owlCarousel({
+    $('.owl-banner-home').owlCarousel({
         items:1,
         loop:true,
         rewind:true,

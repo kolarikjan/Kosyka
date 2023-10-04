@@ -1,24 +1,26 @@
 :root {
-    --highlight-color: #394b80;
-    --button-color: #394b80;
-    --highlight-color2: #fed50a;
+    --highlight-color: #4bbbeb;
+    --button-color: #4bbbeb;
+    --highlight-color2: #723e98;
     --background-color: #ffffff;
     --dropdown-color: #f3f3f3;
     --dropdown-icon-color: #cdcdcd;
     --dropdown-content-color: #fbfbfb;
     --primary-color: #000;
     --secondary-color: #ffffff;
+    --tertiary-color: #001b49;
     --secondary-color-opacity: #ffffff57;
-    --border-color-light: #ffffff14;
-    --border-color: #e1e4eb;
-    --paragraph-color: #616161;
+    --border-color-light: #4bbbeb30;
+    --border-color: #dbdbdb;
+    --paragraph-color: #6c6c6c;
     --section-color: #f3f3f3;
-    --section-color2: #f1f4fc;
+    --section-color2: #22242b;
+    --light-color: #7688a8;
 
     --table-color: #f6f9fc;
     --table-header-color: #e8f2fc;
     --menu-color: #000;
-    --background-secondary-color: #e8f2fc;
+    --background-secondary-color: #f2f5fb;
     --section-preTitle-background-color: #f4f4f4;
     --section2-preTitle-background2-color: #ffffff;
     --section-preTitle-color: #575656;
@@ -37,8 +39,8 @@
     
     --font: "Poppins", sans-serif;
     --font2: "Poppins", sans-serif;
-    --button-radius: 5px;
-    --border-radius: 7px;
+    --button-radius: 25px;
+    --border-radius: 15px;
     --input-radius: 5px;
     --gallery-radius: 10px;
     --popup-radius: 15px;

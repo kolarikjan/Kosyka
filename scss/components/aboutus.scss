@@ -1,0 +1,77 @@
+.section-aboutus {
+    background-image: url("../../img/section-aboutus-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom 1.5rem right;
+    &-largeText {
+        font-size: 24px;
+        line-height: 38px;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+    }
+    &-smallText {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    &-buttons {
+        margin-top: 4rem;
+    }
+    &-counters {
+        margin-top: 30%;
+        padding-left: 5rem;
+        @include media("xxl") {
+            padding-left: 2rem;
+        }
+        @include media("xl") {
+            padding-left: 0;
+            margin-top: 3rem;
+        }
+        &-content {
+            margin-left: -2rem;
+            @include media("xxl") {
+                margin-left: -1rem;
+            }
+            @include media("md") {
+                margin-left: 0;
+                margin-bottom: -2rem;
+            }
+        }
+        .row > div:not(:nth-child(3n)) {
+            border-right: 1px solid var(--border-color);
+            @include media("md") {
+                border-right: 0;
+            }
+        }
+        &-item {
+            padding: .5rem 2rem;
+            @include media("xxl") {
+                padding: .5rem 1rem;
+            }
+            @include media("md") {
+                padding: 0;
+                margin-bottom: 2rem;
+            }
+            span {
+                color: var(--highlight-color2);
+                font-size: 70px;
+                letter-spacing: -2px;
+                line-height: 70px;
+                font-weight: 600;
+                display: block;
+                margin-bottom: .5rem;
+            }
+            p {
+                font-size: 15px;
+                line-height: 20px;
+                color: var(--tertiary-color);
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+        }
+        .row > div:nth-child(3n) &-item {
+            padding-right: 0;
+        }
+    }
+}

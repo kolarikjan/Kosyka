@@ -1,0 +1,45 @@
+.section-aboutus-largeText {
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.section-aboutus-smallText {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+.section-aboutus-buttons {
+  margin-top: 4rem;
+}
+.section-aboutus-counters {
+  margin-top: 30%;
+  padding-left: 5rem;
+}
+.section-aboutus-counters .row > div:not(:nth-child(3n)) {
+  border-right: 1px solid var(--border-color);
+}
+.section-aboutus-counters-item {
+  padding: 0.5rem 2rem;
+}
+.section-aboutus-counters-item span {
+  color: var(--highlight-color2);
+  font-size: 70px;
+  letter-spacing: -2px;
+  line-height: 70px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.section-aboutus-counters-item p {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--tertiary-color);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.row > div:nth-child(3n) .section-aboutus-counters-item {
+  padding-right: 0;
+}/*# sourceMappingURL=aboutus.css.map */

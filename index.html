@@ -19,18 +19,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
+    <div class="header header-extended">
+        <div class="container-fluid">
             <nav class="header-nav navbar navbar-expand-lg navbar-light">
-                <a class="header-logo" href="#">
+                <a class="header-logo flex-shrink-0" href="#">
                     <img src="img/logo.svg" alt="logo" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="animated-icon"><span></span><span></span><span></span></span>
                 </button>
-                <div class="collapse navbar-collapse" id="nav">
-                    <div class="header-menu d-lg-none">
-                        <ul>
+                <div class="collapse navbar-collapse justify-content-center" id="nav">
+                    <div class="header-menu">
+                        <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center mb-0">
                             <li class="header-menu-link">
                                 <a href="">O společnosti</a>
                             </li>
@@ -43,14 +43,19 @@
                             <li class="header-menu-link">
                                 <a href="">Technologie</a>
                             </li>
-                            <li class="dropdown-hover header-menu-link">
+                            <li class="header-menu-dropdown header-menu-link">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="8px">
-                                        <path fill-rule="evenodd"  fill="rgb(254, 213, 10)" d="M11.661,1.556 L10.409,0.150 L6.164,4.762 L1.920,0.150 L0.668,1.556 L4.912,6.168 L6.164,7.574 L7.417,6.168 L11.661,1.556 Z"/>
-                                    </svg>
                                     Nabídky spolupráce
+                                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8">
+                                        <style>
+                                            .s0 { fill: #ffffff } 
+                                        </style>
+                                        <g id="Menu-top">
+                                            <path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/>
+                                        </g>
+                                    </svg>
                                 </a>
-                                <div class="dropdown-hover-menu">
+                                <div class="header-menu-dropdown-menu">
                                     <div>
                                         <a href="" class="dropdown-hover-item">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
@@ -73,22 +78,67 @@
                             <li class="header-menu-link">
                                 <a href="">Kontakt</a>
                             </li>
+                            <li class="">
+                                <div class="header-rightbox d-flex d-lg-none flex-column justify-content-center align-items-center">
+                                    <div class="header-rightbox-buttons">
+                                        <a href="#" class="button button-cyan button-shine">
+                                            Eshop
+                                        </a>
+                                    </div>
+                                    <div class="header-rightbox-icons d-flex align-items-center">
+                                        <div>
+                                            <a href="#">
+                                                <img src="img/icons/icon-search.svg" alt="search">
+                                            </a>
+                                        </div>
+                                        <div class="header-rightbox-icons-dropdown">
+                                            <a href="#">
+                                                cz
+                                            </a>
+                                            <div class="header-rightbox-icons-dropdown-content">
+                                                <div>
+                                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/flags/flag_de.png" alt="de">
+                                                                de
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/flags/flag_en.png" alt="en">
+                                                                en
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="header-rightbox flex-column flex-md-row align-items-start align-items-md-center">
-                        <div class="header-rightbox-buttons">
-                            <a href="#" class="button button-cyan">
-                                Eshop
+                </div>
+                <div class="header-rightbox d-none d-lg-flex flex-column flex-md-row align-items-start align-items-md-center">
+                    <div class="header-rightbox-buttons">
+                        <a href="#" class="button button-cyan button-shine">
+                            Eshop
+                        </a>
+                    </div>
+                    <div class="header-rightbox-icons d-flex align-items-center">
+                        <div>
+                            <a href="#">
+                                <img src="img/icons/icon-search.svg" alt="search">
                             </a>
                         </div>
-                        <div class="header-rightbox-icons">
-                            <a href="#" class="header-icon">
-                                <img src="img/icons/icon-search.svg" alt="search">
+                        <div class="header-rightbox-icons-dropdown">
+                            <a href="#">
+                                cz
                             </a>
-                            <a href="#" class="header-icon header-icon-dropdown">
-                                <img src="img/icons/icon-search.svg" alt="search">
-                                <div class="header-icon-dropdown-content">
-                                    <ul>
+                            <div class="header-rightbox-icons-dropdown-content">
+                                <div>
+                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
                                         <li>
                                             <a href="#">
                                                 <img src="img/flags/flag_de.png" alt="de">
@@ -103,26 +153,28 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="header-banner">
-            <div class="owl-carousel owl-theme owl-banner-home">
-                <div class="header-banner-item">
-                    <div class="row">
-                        <div class="col-12 col-lg-7 col-xl-6 order-2 order-lg-1">
-                            <div class="container container-split-left">
-                                <h2>Největší nezávislý 100% český výrobce kabeláží a kabelových svazků.</h2>
-                                <div class="header-banner-numbers">
-                                    <p>Celosvětově přes <span>50 klientů.</span></p>
-                                    <p>V roce 2020 vyrobeno více než <span>20 milionů produktů.</span></p>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-12 col-lg-7 col-xl-6 order-2 order-lg-1">
+                    <div class="container container-split-left h-100">
+                        <div class="header-banner-item">
+                            <h2>Největší nezávislý 100% český výrobce kabeláží a kabelových svazků.</h2>
+                            <div class="header-banner-numbers">
+                                <p>Celosvětově přes <span>50 klientů.</span></p>
+                                <p>V roce 2020 vyrobeno více než <span>20 milionů produktů.</span></p>
+                            </div>    
                         </div>
-                        <div class="col-12 col-lg-5 col-xl-6 order-1 order-lg-2">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-6 order-1 order-lg-2">
+                    <div class="owl-carousel owl-theme owl-banner-home">
+                        <div class="header-banner-item">
                             <img src="img/section-banner-home-item1.png" alt="banner image">
                         </div>
                     </div>
@@ -134,48 +186,74 @@
     <div class="section section-aboutus">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-xl-6">
                     <div class="section-aboutus-texts">
-                        <h1 class="section-aboutus-title">Společnost KOSYKA</h1>
+                        <div class="section-title">
+                            <h1>Společnost KOSYKA</h1>    
+                        </div>
                         <h2 class="section-aboutus-largeText">KOSYKA, s.r.o. byla založena v dubnu roku 1995.<br>Od svého založení se zabývá montáží konektorů a výrobou kabeláží pro spotřební elektroniku, automobilový průmysl a mnohá další průmyslová odvětví.</h2>
                         <p class="section-aboutus-smallText">Mimo výrobní činnost se dále věnujeme obchodní činnosti v oblasti kontaktů a konektorů. KOSYKA, s.r.o. je výhradním obchodním zástupcem firem J.S.T. Mfg. Co., Ltd. a Franz Binder GmbH & Co. Elektrische Bauelemente KG pro Českou republiku.</p>
-                        <div class="aboutus-buttons">
+                        <div class="section-aboutus-buttons d-none d-md-block">
                             <a href="#" class="button button-cyan">
                                 Více o společnosti
-                                <img src="img/icons/icon-arrow-button.svg" alt="arrow">
+                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                    <title>About</title>
+                                    <style>
+                                        .s0 { fill: #ffffff } 
+                                    </style>
+                                    <g id="About">
+                                        <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-xl-6">
                     <div class="section-aboutus-counters">
                         <h3 class="section-label">KOSYKA v číslech</h3>
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-sm-6 col-xl-4">
-                                <div class="section-aboutus-counters-item">
-                                    <p>
-                                        <span data-value="45">0</span>
-                                        % odbyt pro automobilový průmysl
-                                    </p>
+                        <div class="section-aboutus-counters-content">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="45">0</span>
+                                            % odbyt pro automobilový průmysl
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-xl-4">
-                                <div class="section-aboutus-counters-item">
-                                    <p>
-                                        <span data-value="150">0</span>
-                                        Počet zaměstnanců
-                                    </p>
+                                <div class="col-12 col-md-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="150">0</span>
+                                            Počet zaměstnanců
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-xl-4">
-                                <div class="section-aboutus-counters-item">
-                                    <p>
-                                        <span data-value="55">0</span>
-                                        % odbyt pro ostatní průmyslová odvětví
-                                    </p>
+                                <div class="col-12 col-md-4">
+                                    <div class="section-aboutus-counters-item">
+                                        <p>
+                                            <span data-value="55">0</span>
+                                            % odbyt pro ostatní průmyslová odvětví
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="section-aboutus-buttons d-md-none">
+                        <a href="#" class="button button-cyan">
+                            Více o společnosti
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                <title>About</title>
+                                <style>
+                                    .s0 { fill: #ffffff } 
+                                </style>
+                                <g id="About">
+                                    <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -186,52 +264,64 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="section-products-gallery">
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item1.png" alt="product">
                         <span>automotive</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item2.png" alt="product">
                         <span>defence</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item3.png" alt="product">
                         <span>aerospace</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item4.png" alt="product">
                         <span>železnice</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item5.png" alt="product">
                         <span>zdravotnictví</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item6.png" alt="product">
                         <span>bílé zboží</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item7.png" alt="product">
                         <span>měřící technika</span>
                     </a>
-                    <a href="#" class="section-products-item">
+                    <a href="#" class="section-products-gallery-item">
                         <img src="img/section-products-item8.png" alt="product">
                         <span>ostatní</span>
                     </a>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="container container-split-right">
-                    <div class="section-output">
-                        <h2>Produkty</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    </div>
-                    <div class="mt-5">
-                        <a href="#" class="button button-cyan">
-                            Více informací
-                            <img src="img/icons/icon-arrow-button.svg" alt="arrow">
-                        </a>    
-                    </div>
+                <div class="section-products-texts">
+                    <div class="container container-split-right">
+                        <div class="section-title">
+                            <h2>Produkty</h2>
+                        </div>
+                        <div class="section-output">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="button button-cyan">
+                                Více informací
+                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                    <title>About</title>
+                                    <style>
+                                        .s0 { fill: #ffffff } 
+                                    </style>
+                                    <g id="About">
+                                        <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                    </g>
+                                </svg>
+                            </a>    
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
@@ -340,7 +430,15 @@
                     <div class="mt-5">
                         <a href="#" class="button button-cyan">
                             Více informací
-                            <img src="img/icons/icon-arrow-button.svg" alt="arrow">
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                <title>About</title>
+                                <style>
+                                    .s0 { fill: #ffffff } 
+                                </style>
+                                <g id="About">
+                                    <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                </g>
+                            </svg>
                         </a>    
                     </div>
                 </div>
@@ -356,14 +454,12 @@
             <div class="row section-news-row">
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="section-news-item">
-                        <div class="position-relative">
-                            <a href="#" class="section-news-item-image">
-                                <img src="img/section-news-item1.png" alt="news" class="img-fluid">
-                            </a>
-                            <div class="section-news-item-date">23.7.2019</div>    
-                        </div>
+                        <a href="#" class="section-news-item-image">
+                            <img src="img/section-news-item1.png" alt="news" class="img-fluid">
+                        </a>
                         <div class="section-news-item-body">
                             <div>
+                                <div class="section-news-item-date">23.7.2019</div> 
                                 <a href="#" class="section-news-item-title">
                                     Lorem ipsum dolor sit amet
                                 </a>
@@ -372,21 +468,27 @@
                                 </p>
                             </div>
                             <a href="" class="section-news-item-more">
-                                <img src="img/icons/icon-arrow-button-large.svg" alt="large arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
+                                    <title>News</title>
+                                    <style>
+                                        .s0 { fill: #723e98 } 
+                                    </style>
+                                    <g id="News">
+                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="section-news-item">
-                        <div class="position-relative">
-                            <a href="#" class="section-news-item-image">
-                                <img src="img/section-news-item2.png" alt="news" class="img-fluid">
-                            </a>
-                            <div class="section-news-item-date">23.7.2019</div>    
-                        </div>
+                        <a href="#" class="section-news-item-image">
+                            <img src="img/section-news-item2.png" alt="news" class="img-fluid">
+                        </a>
                         <div class="section-news-item-body">
                             <div>
+                                <div class="section-news-item-date">23.7.2019</div>    
                                 <a href="#" class="section-news-item-title">
                                     Lorem ipsum dolor sit amet
                                 </a>
@@ -395,21 +497,27 @@
                                 </p>
                             </div>
                             <a href="" class="section-news-item-more">
-                                <img src="img/icons/icon-arrow-button-large.svg" alt="large arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
+                                    <title>News</title>
+                                    <style>
+                                        .s0 { fill: #723e98 } 
+                                    </style>
+                                    <g id="News">
+                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="section-news-item">
-                        <div class="position-relative">
-                            <a href="#" class="section-news-item-image">
-                                <img src="img/section-news-item3.png" alt="news" class="img-fluid">
-                            </a>
-                            <div class="section-news-item-date">23.7.2019</div>    
-                        </div>
+                        <a href="#" class="section-news-item-image">
+                            <img src="img/section-news-item3.png" alt="news" class="img-fluid">
+                        </a>
                         <div class="section-news-item-body">
                             <div>
+                                <div class="section-news-item-date">23.7.2019</div>    
                                 <a href="#" class="section-news-item-title">
                                     Lorem ipsum dolor sit amet
                                 </a>
@@ -418,7 +526,15 @@
                                 </p>
                             </div>
                             <a href="" class="section-news-item-more">
-                                <img src="img/icons/icon-arrow-button-large.svg" alt="large arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
+                                    <title>News</title>
+                                    <style>
+                                        .s0 { fill: #723e98 } 
+                                    </style>
+                                    <g id="News">
+                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -427,7 +543,15 @@
             <div class="section-footer">
                 <a href="" class="button button-cyan">
                     Archiv aktualit
-                    <img src="img/icons/icon-arrow-button.svg" alt="arrow">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                        <title>About</title>
+                        <style>
+                            .s0 { fill: #ffffff } 
+                        </style>
+                        <g id="About">
+                            <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                        </g>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -436,7 +560,7 @@
     <div class="footer">
         <div class="container">
             <div class="row footer-row">
-                <div class="col-12 col-md-6 col-xl-3 offset-lg-2">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-3 offset-xl-2">
                     <div class="footer-item">
                         <div class="footer-item-header">
                             <div>
@@ -461,7 +585,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
                     <div class="footer-item">
                         <div class="footer-item-header">
                             <div>
@@ -512,7 +636,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
                     <div class="footer-item">
                         <div class="footer-item-header">
                             <div>
