@@ -1,28 +1,59 @@
 .header-banner {
-    &-item {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    margin-top: 8rem;
+    @media (max-width: 1500px) {
+        margin-top: 4rem;
+    }
+    @include media("xl") {
+        margin-top: 0;
+    }
+    &-text {
+        @include media("xl") {
+            margin: 8.5rem 0 6rem;
+        }
+        @include media("md") {
+            margin: 7rem 0 4rem;
+        }
         h2 {
             color: var(--secondary-color);
             font-size: 50px;
             line-height: 65px;
             font-weight: 400;
             margin-bottom: 5rem;
+            @include min-media("xxl") {
+                max-width: 82%;
+            }
+            @media (max-width: 1500px) and (min-width: 1200px) {
+                margin-bottom: 2rem;
+                font-size: 43px;
+                line-height: 58px;
+            }
+            @include media("xl") {
+                margin-bottom: 3rem;
+            }
+            @include media("md") {
+                text-align: center;
+                font-size: 40px;
+                line-height: 55px;
+            }
         }
     }
     &-numbers {
         p {
             color: var(--secondary-color);
             font-size: 18px;
-            line-height: 40px;
+            line-height: 32px;
             font-weight: 500;
             margin-bottom: 0;
+            &:not(:last-child) {
+                margin-bottom: .75rem;
+            }
+            @include media("md") {
+                text-align: center;
+            }
             span {
                 border-radius: var(--border-radius);
                 display: inline-block;
-                padding: 0 .5rem;
+                padding: 0 .65rem;
                 line-height: 31px;
             }
             &:nth-child(1) span {
@@ -34,8 +65,160 @@
         }
     }
     &-item {
-        margin-bottom: -100px;
         position: relative;
         z-index: 1;
+        img {
+            object-fit: cover;
+            background-color: var(--secondary-color);
+            height: 100%;
+            aspect-ratio: 1.5/1;
+            min-height: 300px;
+            max-height: 1000px;
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            margin-top: 0;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            left: -11.5rem;
+            bottom: 2rem;
+            &.disabled {
+                display: none !important;
+            }
+            button {
+                background: var(--highlight-color) !important;
+                border-radius: 50% !important;
+                width: 37px;
+                aspect-ratio: 1/1;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                margin: 0 !important;
+                transition-duration: 0.15s;
+                svg, svg path {
+                    fill: var(--secondary-color);
+                }
+                &.owl-prev {
+                    svg {
+                        transform: rotate(90deg);
+                    }
+                }
+                &.owl-next {
+                    svg {
+                        transform: rotate(-90deg);
+                    }
+                }
+                &:hover {
+                    background: var(--highlight-color2) !important;
+                }
+            }
+            &-4 {
+                width: 170px;
+                left: -12.5rem;
+            }
+            &-3 {
+                width: 150px;
+                left: -11.5rem;
+            }
+            &-2 {
+                width: 130px;
+                left: -10.5rem;
+            }
+            @include media("xl") {
+                left: 50%;
+                bottom: -4rem;
+                transform: translateX(-50%);
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            left: -9.25rem;
+            bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            height: 37px;
+            width: 77px;
+            &.disabled {
+                display: none !important;
+            }
+            button {
+                span {
+                    background-color: var(--secondary-color);
+                    margin: 0;
+                    transition-duration: 0.15s;
+                }
+                &.active span, &:hover span {
+                    background-color: var(--highlight-color);
+                }
+            }
+            &-4 {
+                left: -10.25rem;
+                width: 98px;
+            }
+            &-3 {
+                left: -9.25rem;
+                width: 77px;
+            }
+            &-2 {
+                left: -8.25rem;
+                width: 57px;
+            }
+            @include media("xl") {
+                left: 50%;
+                bottom: -4rem;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+.owl-carousel.owl-custom-nav .owl-nav {
+    margin-top: 0;
+    @include media("sm") {
+        display: flex;
+        gap: .5rem;
+        @include widthFit();
+        margin: 1.5rem auto 0;
+    }
+    button {
+        background: var(--highlight-light-color) !important;
+        border-radius: 50% !important;
+        width: 48px;
+        aspect-ratio: 1/1;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition-duration: 0.15s;
+        svg, svg path {
+            fill: var(--highlight-color);
+            transition-duration: 0.05s;
+        }
+        &.owl-prev {
+            left: -4rem;
+        }
+        &.owl-next {
+            right: -4rem;
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        &:hover {
+            background: var(--highlight-color) !important;
+            svg, svg path {
+                fill: var(--secondary-color);
+            }
+        }
+        @include media("sm") {
+            position: unset;
+            transform: none;
+        }
     }
 }

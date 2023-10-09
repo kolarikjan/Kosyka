@@ -1,0 +1,92 @@
+@media (min-width: map-get($breaks, "lg")) {
+    .container-split-left, .container-split-right {
+        max-width: 480px;
+    }
+    .container-split-left {
+        margin-left: auto;
+        margin-right: 0;
+    } 
+    .container-split-right {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+@media (min-width: map-get($breaks, "lg")) and (max-width: map-get($breaks, "xl")) {
+    .container-split-xl {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: map-get($breaks, "xl")) {
+    .container-split-left, .container-split-right {
+        max-width: 550px;
+    }
+}
+@media (min-width: 1500px) {
+    .container-split-left, .container-split-right {
+        max-width: 660px;
+    }
+}
+@media (min-width: map-get($breaks, "xxl")) {
+    .container {
+        max-width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container-split-left, .container-split-right {
+        max-width: 705px;
+    }
+}
+.container-split > .row {
+    margin: 0;
+}
+@include min-media("lg") {
+    .container-split > .row > .col-lg-6 {
+        &:nth-child(odd) {
+            padding-left: 0;
+            & > .container {
+                padding: 0 0 0 0.75rem;
+            }
+        }
+        &:nth-child(even) {
+            padding-right: 0;
+            & > .container {
+                padding: 0 0.75rem 0 0;
+            }
+        }
+    }    
+}
+@include min-media("xl") {
+    .container-split > .row > .col-xl-6 {
+        &:nth-child(odd) {
+            padding-left: 0;
+            & > .container {
+                padding: 0 0 0 0.75rem;
+            }
+        }
+        &:nth-child(even) {
+            padding-right: 0;
+            & > .container {
+                padding: 0 0.75rem 0 0;
+            }
+        }
+    }    
+}
+
+@include media("xl") {
+    .container-split > .row > .col-xl-6 {
+        padding: 0;
+        &.container-split-mobile-nospacing > .container {
+            padding: 0;
+        }
+    }
+}
+@include media("lg") {
+    .container-split > .row > .col-lg-6{
+        padding: 0;
+        &.container-split-mobile-nospacing > .container {
+            padding: 0;
+        }
+    }
+}

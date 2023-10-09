@@ -1,0 +1,14 @@
+.section-technologies-list li {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--tertiary-color);
+  font-weight: 700;
+}
+
+.section-technologies-list li:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.section-technologies-banner {
+  padding-right: 5rem;
+}

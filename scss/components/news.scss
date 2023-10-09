@@ -58,6 +58,7 @@
             text-decoration: none !important;
             margin-bottom: 1rem;
             display: block;
+            transition-duration: 0.15s;
             &:hover {
                 color: var(--highlight-color);
             }
@@ -80,6 +81,7 @@
             svg {
                 margin-left: auto;
                 &, .st0, path {
+                    transition-duration: 0.15s;
                     fill: var(--highlight-color2);
                 }
                 &:hover, &:hover .st0, &:hover path{

@@ -120,9 +120,18 @@ const catalogImages = () => {
     });
 }
 
+const homepageBanner = () => {
+    const len = $(".header-banner-item").length;
+    return len;
+}
+
 $(document).ready(function () {
 
+
     Fancybox.bind("[data-fancybox]", {});
+
+    const homepageBannerLength = homepageBanner();
+
 
     fixAboutUsBackground();
 
@@ -201,65 +210,47 @@ $(document).ready(function () {
         items:1,
         loop:true,
         rewind:true,
-        navText:['<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="10px" height="8px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)"d="M0.029,3.1000 L-0.001,4.027 L4.058,7.764 C4.226,7.917 4.451,8.001 4.690,8.001 C4.929,8.001 5.153,7.917 5.322,7.764 L5.349,7.739 C5.518,7.586 5.611,7.382 5.611,7.165 C5.611,6.948 5.518,6.745 5.349,6.592 L3.466,4.827 L9.108,4.827 C9.601,4.827 10.002,4.464 10.002,4.016 L10.002,3.981 C10.002,3.534 9.601,3.171 9.108,3.171 L3.466,3.171 L5.349,1.406 C5.518,1.253 5.611,1.050 5.611,0.833 C5.611,0.616 5.518,0.412 5.349,0.260 L5.322,0.235 C5.153,0.081 4.929,-0.003 4.690,-0.003 C4.451,-0.003 4.226,0.081 4.058,0.235 L-0.001,3.972 L0.029,3.1000 Z"/></svg>','<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="10px" height="8px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)"d="M9.971,4.000 L10.001,3.973 L5.942,0.236 C5.774,0.084 5.549,-0.001 5.310,-0.001 C5.071,-0.001 4.847,0.084 4.678,0.236 L4.651,0.261 C4.482,0.414 4.389,0.618 4.389,0.835 C4.389,1.051 4.482,1.255 4.651,1.408 L6.534,3.173 L0.892,3.173 C0.399,3.173 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.892,4.829 L6.534,4.829 L4.651,6.594 C4.482,6.747 4.389,6.950 4.389,7.167 C4.389,7.384 4.482,7.588 4.651,7.741 L4.678,7.765 C4.847,7.919 5.071,8.002 5.310,8.002 C5.549,8.002 5.774,7.919 5.942,7.765 L10.001,4.028 L9.971,4.000 Z"/></svg>'],
-        margin:1,
-        nav:true,
-        dots:true,
+        navText:['<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 13 8" width="13" height="8"><g id="Menu-top"><path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/></g></svg>','<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 13 8" width="13" height="8"><g id="Menu-top"><path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/></g></svg>'],
+        margin:0,
+        nav: homepageBannerLength > 1 ? true : false,
+        dots: homepageBannerLength > 1 ? true : false,
         autoplay:true,
         autoplayTimeout:6000,
         autoplayHoverPause:false,
-        responsive:{
-            0:{
-                nav:false,
-            },
-            993:{
-                nav:true,
-            }
-        }
     });
 
-    $('.product-detail-images-owl').owlCarousel({
+    const homepageBannerNav = $(".owl-banner-home .owl-nav");
+    const homepageBannerDots = $(".owl-banner-home .owl-dots");
+
+    switch (homepageBannerLength) {
+        case 2:
+            homepageBannerDots.addClass("owl-dots-2");
+            homepageBannerNav.addClass("owl-nav-2");
+            break;
+        case 3:
+            homepageBannerDots.addClass("owl-dots-3");
+            homepageBannerNav.addClass("owl-nav-3");
+            break;
+        default:
+            homepageBannerDots.addClass("owl-dots-4");
+            homepageBannerNav.addClass("owl-nav-4");
+            break;
+    }
+
+    $('.owl-banner-technologies').owlCarousel({
         items:1,
         loop:false,
         rewind:true,
-        navText:['<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="11px" height="9px"><path fill-rule="evenodd"  fill="rgb(57, 75, 128)"d="M0.654,4.125 L0.624,4.152 L4.683,7.889 C4.851,8.041 5.076,8.127 5.315,8.127 C5.554,8.127 5.778,8.041 5.947,7.889 L5.974,7.865 C6.143,7.711 6.236,7.507 6.236,7.290 C6.236,7.074 6.143,6.870 5.974,6.718 L4.091,4.952 L9.733,4.952 C10.226,4.952 10.627,4.589 10.627,4.141 L10.627,4.106 C10.627,3.659 10.226,3.296 9.733,3.296 L4.091,3.296 L5.974,1.531 C6.143,1.378 6.236,1.175 6.236,0.958 C6.236,0.741 6.143,0.537 5.974,0.384 L5.947,0.360 C5.778,0.206 5.554,0.122 5.315,0.122 C5.076,0.122 4.851,0.206 4.683,0.360 L0.624,4.097 L0.654,4.125 Z"/></svg>','<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="10px" height="8px"><path fill-rule="evenodd"  fill="rgb(57, 75, 128)"d="M9.971,4.000 L10.001,3.973 L5.942,0.236 C5.774,0.084 5.549,-0.002 5.310,-0.002 C5.071,-0.002 4.847,0.084 4.678,0.236 L4.651,0.260 C4.482,0.414 4.389,0.618 4.389,0.835 C4.389,1.051 4.482,1.255 4.651,1.407 L6.534,3.173 L0.892,3.173 C0.399,3.173 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.892,4.829 L6.534,4.829 L4.651,6.593 C4.482,6.747 4.389,6.950 4.389,7.167 C4.389,7.384 4.482,7.588 4.651,7.740 L4.678,7.765 C4.847,7.919 5.071,8.002 5.310,8.002 C5.549,8.002 5.774,7.919 5.942,7.765 L10.001,4.028 L9.971,4.000 Z"/></svg>'],
-        margin:15,
+        navText:['<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 8" width="10" height="8"><g id="Technology"><path id="-e-icon-arrow-banner" class="s0" d="m0 4l4.1 3.8q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2v-0.1q0.3-0.2 0.3-0.5 0-0.4-0.3-0.6l-1.8-1.8h5.6c0.5 0 0.9-0.3 0.9-0.8 0-0.5-0.4-0.8-0.9-0.8h-5.6l1.8-1.8q0.3-0.2 0.3-0.6 0-0.3-0.3-0.5v-0.1q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2l-4.1 3.8z"/></g></svg>','<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 8" width="10" height="8"><g id="Technology"><path id="-e-icon-arrow-banner" class="s0" d="m0 4l4.1 3.8q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2v-0.1q0.3-0.2 0.3-0.5 0-0.4-0.3-0.6l-1.8-1.8h5.6c0.5 0 0.9-0.3 0.9-0.8 0-0.5-0.4-0.8-0.9-0.8h-5.6l1.8-1.8q0.3-0.2 0.3-0.6 0-0.3-0.3-0.5v-0.1q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2l-4.1 3.8z"/></g></svg>'],
+        margin:40,
         nav:true,
         dots:false,
         responsive:{
             0:{
-                items:2
+                items:1
             },
             576:{
-                items:3
-            }
-        }
-    });
-
-    $('.products-catalog-owl').owlCarousel({
-        items:1,
-        loop:false,
-        rewind:true,
-        navText:['<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="11px" height="9px"><path fill-rule="evenodd"  fill="rgb(57, 75, 128)"d="M0.654,4.125 L0.624,4.152 L4.683,7.889 C4.851,8.041 5.076,8.127 5.315,8.127 C5.554,8.127 5.778,8.041 5.947,7.889 L5.974,7.865 C6.143,7.711 6.236,7.507 6.236,7.290 C6.236,7.074 6.143,6.870 5.974,6.718 L4.091,4.952 L9.733,4.952 C10.226,4.952 10.627,4.589 10.627,4.141 L10.627,4.106 C10.627,3.659 10.226,3.296 9.733,3.296 L4.091,3.296 L5.974,1.531 C6.143,1.378 6.236,1.175 6.236,0.958 C6.236,0.741 6.143,0.537 5.974,0.384 L5.947,0.360 C5.778,0.206 5.554,0.122 5.315,0.122 C5.076,0.122 4.851,0.206 4.683,0.360 L0.624,4.097 L0.654,4.125 Z"/></svg>','<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="10px" height="8px"><path fill-rule="evenodd"  fill="rgb(57, 75, 128)"d="M9.971,4.000 L10.001,3.973 L5.942,0.236 C5.774,0.084 5.549,-0.002 5.310,-0.002 C5.071,-0.002 4.847,0.084 4.678,0.236 L4.651,0.260 C4.482,0.414 4.389,0.618 4.389,0.835 C4.389,1.051 4.482,1.255 4.651,1.407 L6.534,3.173 L0.892,3.173 C0.399,3.173 -0.002,3.536 -0.002,3.984 L-0.002,4.019 C-0.002,4.466 0.399,4.829 0.892,4.829 L6.534,4.829 L4.651,6.593 C4.482,6.747 4.389,6.950 4.389,7.167 C4.389,7.384 4.482,7.588 4.651,7.740 L4.678,7.765 C4.847,7.919 5.071,8.002 5.310,8.002 C5.549,8.002 5.774,7.919 5.942,7.765 L10.001,4.028 L9.971,4.000 Z"/></svg>'],
-        margin:15,
-        nav:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            768:{
-                items:2,
-                nav:false
-            },
-            993:{
-                items:3,
-                nav:true
-            },
-            1200:{
-                items:4,
-                nav:true
+                items:2
             }
         }
     });

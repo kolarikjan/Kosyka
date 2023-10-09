@@ -1,0 +1,23 @@
+.section-technologies {
+    &-list {
+        li {
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--tertiary-color);
+            font-weight: 700;
+            &:not(:last-child) {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    &-banner {
+        max-width: 948px;
+        @include min-media("lg") {
+            padding-right: 5rem;
+            .container {
+                max-width: unset;
+                padding: unset;
+            }
+        }
+    }
+}

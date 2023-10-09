@@ -1,0 +1,80 @@
+.section-quality {
+    &-certificates {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        @include media("lg") {
+            margin-top: 5rem;
+        }
+        @include media("md") {
+            margin-top: 3rem;
+            justify-content: center;
+            gap: 2rem;
+        }
+        @include media("sm") {
+            gap: 1.5rem;
+        }
+        &-item {
+            border-radius: var(--small-radius);
+            border: 2px solid var(--highlight-color2);
+            padding: 2rem 1.25rem 3.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 165px;
+            position: relative;
+            text-decoration: none !important;
+            transition-duration: 0.15s;
+            @include media("md") {
+                text-align: center;
+            }
+            @include media("sm") {
+                width: 140px;
+            }
+            &-icon {
+                margin-bottom: 1rem;
+                height: 48px;
+                &, path {
+                    transition-duration: 0.15s;
+                    fill: var(--highlight-color2);
+                }
+            }
+            span {
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--highlight-color2);
+                font-weight: 700;
+                transition-duration: 0.15s;
+            }
+            &-plus {
+                position: absolute;
+                bottom: .75rem;
+                right: .75rem;
+                background-color: var(--highlight-color2);
+                border-radius: 50%;
+                padding: .5rem;
+                transition-duration: 0.15s;
+                svg {
+                    width: 9px;
+                    &, path {
+                        fill: var(--secondary-color);
+                    }
+                }
+            }
+            &:hover {
+                border-color: var(--highlight-color);
+                span {
+                    color: var(--highlight-color);
+                }
+            }
+            &:hover &-icon {
+                &, path {
+                    fill: var(--highlight-color);
+                }
+            }
+            &:hover &-plus {
+                background-color: var(--highlight-color);
+            }
+        }
+    }
+}

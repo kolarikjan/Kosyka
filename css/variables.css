@@ -27,12 +27,11 @@
     --services-boxes-color: #f1f8fd;
     --news-date-color: #ababab;
     --news-border-color: #eaecf0;
-    --highlight-light-color: #e1f3ff;
+    --highlight-light-color: #e4f5fc;
     --socials-icon-color: #343434;
     --footer-icon-color: #808080;
     --footer-color: #c9b6a6;
     --copyright-color: #a2a2a2;
-    --border-radius: 10px;
     --numbers-number-color: #394b80;
     --link-color: #394b80;
     --numbers-number-background: #fff;
@@ -41,7 +40,7 @@
     --font2: "Poppins", sans-serif;
     --button-radius: 25px;
     --border-radius: 15px;
-    --input-radius: 5px;
+    --small-radius: 5px;
     --gallery-radius: 10px;
     --popup-radius: 15px;
     --line-color-light: #ffffff38;

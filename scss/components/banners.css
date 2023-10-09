@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .header-banner-item h2 {
   color: var(--secondary-color);
   font-size: 50px;
@@ -11,6 +12,7 @@
   font-weight: 400;
   margin-bottom: 5rem;
 }
+
 .header-banner-numbers p {
   color: var(--secondary-color);
   font-size: 18px;
@@ -18,20 +20,68 @@
   font-weight: 500;
   margin-bottom: 0;
 }
+
 .header-banner-numbers p span {
   border-radius: var(--border-radius);
   display: inline-block;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
   line-height: 31px;
 }
+
 .header-banner-numbers p:nth-child(1) span {
   background-color: var(--highlight-color);
 }
+
 .header-banner-numbers p:nth-child(2) span {
   background-color: var(--highlight-color2);
 }
+
 .header-banner-item {
   margin-bottom: -100px;
   position: relative;
   z-index: 1;
-}/*# sourceMappingURL=banners.css.map */
+}
+
+.owl-carousel .owl-nav {
+  margin-top: 0;
+}
+
+.owl-carousel .owl-nav button {
+  background: var(--highlight-light-color) !important;
+  border-radius: 50% !important;
+  width: 48px;
+  aspect-ratio: 1/1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 0.15s;
+}
+
+.owl-carousel .owl-nav button svg, .owl-carousel .owl-nav button svg path {
+  fill: var(--highlight-color);
+  transition-duration: 0.05s;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -4rem;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -4rem;
+}
+
+.owl-carousel .owl-nav button.owl-next svg {
+  transform: rotate(180deg);
+}
+
+.owl-carousel .owl-nav button:hover {
+  background: var(--highlight-color) !important;
+}
+
+.owl-carousel .owl-nav button:hover svg, .owl-carousel .owl-nav button:hover svg path {
+  fill: var(--secondary-color);
+}

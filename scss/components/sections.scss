@@ -3,31 +3,56 @@
     @include media("md") {
         padding: 4rem 0;
     }
+    &-spacing-reduce {
+        padding: 3rem 0 6rem;
+        @include media("md") {
+            padding: 2rem 0 4rem;
+        }
+    }
     &-title {
         h1,h2,h3 {
             color: var(--tertiary-color);
-            margin-bottom: 3rem;
+            letter-spacing: -1px;
             @include media("md") {
                 text-align: center;
             }
         }
         h1,h2 {
             font-size: 48px;
-            letter-spacing: -1px;
             line-height: 60px;
             font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        h3 {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
         }
     }
     &-footer {
         margin-top: 4.5rem;
         @include media("md") {
             margin-top: 3rem;
-        }
-        a {
-            margin: 0 auto;
+            a {
+                margin: 0 auto;
+            }
         }
     }
     &-output {
+        @include media("md") {
+            * {
+                text-align: center;
+            }
+            ol, ul {
+                @include widthFit();
+                margin-right: auto;
+                margin-left: auto;
+                &, li {
+                    text-align: left;
+                }
+            }
+        }
         p, li {
             font-size: 16px;
             line-height: 30px;
@@ -42,11 +67,23 @@
             margin-top: 0;
             padding-top: 0;
         }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+                display: flex;
+                &::before {
+                    content: url("../../img/icons/icon-plus.svg");
+                    margin-right: 1rem;
+                }
+            }
+        }
     }
     &-label {
         background-color: var(--highlight-color2);
         border-radius: var(--border-radius);
-        display: inline-block;
+        display: block;
+        @include widthFit();
         padding: .25rem 1.5rem;
         line-height: 24px;
         color: var(--secondary-color);
@@ -55,6 +92,10 @@
         text-transform: uppercase;
         font-weight: 500;
         margin-bottom: 2.5rem;
+        @include media("md") {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &-dark {
         h1,h2,h3,h4,h5,p,li {

@@ -2,24 +2,33 @@
     background-image: url("../../img/section-aboutus-background.png");
     background-repeat: no-repeat;
     background-position: bottom 1.5rem right;
+    @include media("xl") {
+        background-size: 25%;
+    }
     &-largeText {
         font-size: 24px;
         line-height: 38px;
         color: var(--primary-color);
         font-weight: 600;
         margin-bottom: 1.25rem;
+        @include media("md") {
+            text-align: center;
+        }
     }
     &-smallText {
         font-size: 18px;
         font-weight: 500;
         line-height: 32px;
         margin-bottom: 0;
+        @include media("md") {
+            text-align: center;
+        }
     }
     &-buttons {
         margin-top: 4rem;
     }
     &-counters {
-        margin-top: 30%;
+        margin-top: 25%;
         padding-left: 5rem;
         @include media("xxl") {
             padding-left: 2rem;
@@ -68,6 +77,9 @@
                 color: var(--tertiary-color);
                 font-weight: 700;
                 margin-bottom: 0;
+                @include media("md") {
+                    text-align: center;
+                }
             }
         }
         .row > div:nth-child(3n) &-item {

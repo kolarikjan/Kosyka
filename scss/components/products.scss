@@ -2,12 +2,27 @@
     background-image: url("../../img/section-products-background.png");
     background-repeat: no-repeat;
     background-position: left center;
+    @media (min-width: 2000px) {
+        background-position: right;
+        background: linear-gradient(to left, #fff 8%, #001f4d 0);
+    }
+    @media (min-width: 2400px) {
+        background: linear-gradient(to left, #fff 15%, #001f4d 0);
+    }
+    @media (min-width: 2800px) {
+        background: linear-gradient(to left, #fff 23%, #001f4d 0);
+    }
+    @media (min-width: 3200px) {
+        background: linear-gradient(to left, #fff 30%, #001f4d 0);
+    }
     @include media("lg") {
         background-size: cover;
         background-position: center;
         padding-top: 0;
     }
     &-gallery {
+        max-width: 948px;
+        margin-left: auto;
         display: flex;
         flex-wrap: wrap;
         &-item {
@@ -48,13 +63,20 @@
         }
     }
     &-texts {
-        padding-left: 5rem;
-        @include media("xxl") {
-            padding-left: 2rem;
-        }
-        @include media("xl") {
-            padding-left: 0;
-            margin-top: 4rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &-inner {
+            padding-left: 5rem;
+            height: 100%;
+            @include media("xxl") {
+                padding-left: 2rem;
+            }
+            @include media("xl") {
+                padding-left: 0;
+                margin-top: 4rem;
+            }
         }
     }
 }
