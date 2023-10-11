@@ -3,10 +3,15 @@
     @include media("md") {
         padding: 4rem 0;
     }
-    &-spacing-reduce {
-        padding: 3rem 0 6rem;
-        @include media("md") {
-            padding: 2rem 0 4rem;
+    &-spacing {
+        &-remove {
+            padding-top: 0;
+        }
+        &-reduce {
+            padding: 3rem 0 6rem;
+            @include media("md") {
+                padding: 2rem 0 4rem;
+            }
         }
     }
     &-title {
@@ -56,7 +61,7 @@
         p, li {
             font-size: 16px;
             line-height: 30px;
-            font-weight: 500;
+            font-weight: 400;
             color: var(--paragraph-color);
         }
         & > *:last-child {
@@ -99,10 +104,10 @@
     }
     &-image {
         &-right {
-            padding-right: 6rem;
+            padding-right: 5rem;
         }
         &-left {
-            padding-left: 6rem;
+            padding-left: 5rem;
         }
         &-right, &-left {
             max-height: 500px;
