@@ -1,0 +1,14 @@
+.section-components {
+    &-inner {
+        background-image: url("../img/section-components-image1.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 500px;
+        @include media("xxl") {
+            background-size: auto 400px;
+        }
+        @include media("xl") {
+            background-image: none;
+        }
+    }
+}

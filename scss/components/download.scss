@@ -2,14 +2,12 @@
     &-card {
         background-color: var(--background-color);
         filter: drop-shadow(6.994px 5.664px 24.5px rgba(0, 27, 73, 0.04));
-        padding: 1.75rem 2.25rem;
-        height: 100%;
-    }
-    &-row {
-        padding-top: 1rem;
+        padding: 1.5rem 2.25rem;
         height: calc(100% - 5.3125rem);
+        &-newsrow {
+            height: calc(100% - 6.3125rem);
+        }
         @include media("lg") {
-            padding-top: 0;
             height: auto;
         }
     }

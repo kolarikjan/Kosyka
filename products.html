@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- DEFAULTS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosyka</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/fancybox.css"> 
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header header-extended">
+        <div class="container container-xl-fluid">
+            <nav class="header-nav navbar navbar-expand-lg navbar-light">
+                <a class="header-logo flex-shrink-0 order-0" href="#">
+                    <img src="img/logo.svg" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animated-icon"><span></span><span></span><span></span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-start justify-content-xl-center order-2 order-lg-3 order-xl-2" id="nav">
+                    <div class="header-menu">
+                        <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center mb-0">
+                            <li class="header-menu-link">
+                                <a href="">O společnosti</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Produkty</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kvalita</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Technologie</a>
+                            </li>
+                            <li class="header-menu-dropdown header-menu-link">
+                                <a href="">
+                                    Nabídky spolupráce
+                                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8">
+                                        <g id="Menu-top">
+                                            <path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div class="header-menu-dropdown-menu">
+                                    <div>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Spolupáce 1
+                                        </a>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Spolupáce 2
+                                        </a>
+                                        <a href="" class="dropdown-hover-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Spolupáce 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kariéra</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Kontakt</a>
+                            </li>
+                            <li class="">
+                                <div class="header-rightbox d-flex d-lg-none flex-column justify-content-center align-items-center">
+                                    <div class="header-rightbox-buttons">
+                                        <a href="#" class="button button-cyan button-shine">
+                                            Eshop
+                                        </a>
+                                    </div>
+                                    <div class="header-rightbox-icons d-flex align-items-center">
+                                        <div>
+                                            <a href="#">
+                                                <img src="img/icons/icon-search.svg" alt="search">
+                                            </a>
+                                        </div>
+                                        <div class="header-rightbox-icons-dropdown">
+                                            <a href="#">
+                                                cz
+                                            </a>
+                                            <div class="header-rightbox-icons-dropdown-content">
+                                                <div>
+                                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/flags/flag_de.png" alt="de">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/flags/flag_en.png" alt="en">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-rightbox d-none d-lg-flex flex-column flex-md-row align-items-start align-items-md-center order-3 order-lg-2 order-xl-3 ms-0 ms-lg-auto ms-xl-0">
+                    <div class="header-rightbox-buttons">
+                        <a href="#" class="button button-cyan button-shine">
+                            Eshop
+                        </a>
+                    </div>
+                    <div class="header-rightbox-icons d-flex align-items-center">
+                        <div>
+                            <a href="#">
+                                <img src="img/icons/icon-search.svg" alt="search">
+                            </a>
+                        </div>
+                        <div class="header-rightbox-icons-dropdown">
+                            <a href="#">
+                                cz
+                            </a>
+                            <div class="header-rightbox-icons-dropdown-content">
+                                <div>
+                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/flags/flag_de.png" alt="de">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/flags/flag_en.png" alt="en">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-banner header-subpage">
+            <div class="container-split">
+                <div class="row">
+                    <div class="col-12 col-xl-6 order-2 order-xl-1">
+                        <div class="container container-split-left container-split-xl">
+                            <div class="header-subpage-text">
+                                <h1>Produkty</h1>
+                                <div class="header-subpage-breadcrumb d-none d-md-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a>Produkty</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 order-1 order-xl-2 d-none d-xl-block">
+                        <img src="img/subpages/subpage-products.png" alt="products" class="header-subpage-photo img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage">
+
+        <div class="section-products section section-overflow-bottom section-background-remove">
+            <div class="container-split">
+                <div class="row">
+                    <div class="col-12 col-lg-6 container-split-mobile-nospacing">
+                        <div class="section-products-gallery">
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item1.png" alt="product">
+                                <span>automotive</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item2.png" alt="product">
+                                <span>defence</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item3.png" alt="product">
+                                <span>aerospace</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item4.png" alt="product">
+                                <span>železnice</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item5.png" alt="product">
+                                <span>zdravotnictví</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item6.png" alt="product">
+                                <span>bílé zboží</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item7.png" alt="product">
+                                <span>měřící technika</span>
+                            </a>
+                            <a href="#" class="section-products-gallery-item">
+                                <img src="img/section-products-item8.png" alt="product">
+                                <span>ostatní</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5 pt-3 pt-lg-0 mt-lg-0">
+                        <div class="ps-xl-5">
+                            <div class="container container-split-right">
+                                <div class="section-title">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>    
+                                </div>
+                                <div class="section-output">
+                                    <p class="section-aboutus-smallText">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-background-light section-components section-overflow-bottom-before">
+            <div class="container">
+                <div class="section-components-inner">
+                    <div class="row">
+                        <div class="col-12 col-xl-7">
+                            <div class="section-title">
+                                <h2>Prodej komponent</h2>
+                            </div>
+                            <div class="section-output">
+                                <p>KOSYKA, s.r.o. je výhradním obchodním zástupcem firem J.S.T. Mfg. Co., Ltd. a Franz Binder GmbH & Co. Elektrische Bauelemente KG pro Českou republiku.
+                                    Můžete u nás objednat nejen veškeré konektory a kontakty J.S.T., ale také nástroje a náhradní díly J.S.T. a konektory Binder.
+                                </p>
+                            </div>
+                            <div class="row mt-5 gap-5 gap-md-0">
+                                <div class="col-12 col-md-6">
+                                    <div class="section-title">
+                                        <h3>Katalogy Binder</h3>
+                                    </div>
+                                    <div class="section-download-card">
+                                        <a href="" class="section-download-item">
+                                        <p>Hlavní katalog</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Základní program</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Přehled</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Konektory pro medicínské vybavení brožura</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Konektory pro stravovací a nápojový průmusl brožura</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M12</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M12 X</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M8, M12</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>LED</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="section-title">
+                                        <h3>Katalogy JST</h3>
+                                    </div>
+                                    <div class="section-download-card">
+                                        <a href="" class="section-download-item">
+                                        <p>Hlavní katalog</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Základní program</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Přehled</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Konektory pro medicínské vybavení brožura</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>Konektory pro stravovací a nápojový průmusl brožura</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M12</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M12 X</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>M8, M12</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                        <a href="" class="section-download-item">
+                                        <p>LED</p>
+                                        <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z" fill="currentColor" /><path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" /></svg>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <div class="section-output mb-5">
+                                    <h4>Pro více informací nás kontaktujte</h4>
+                                </div>
+                                <a href="#" class="button button-cyan">
+                                    Poptávkový formulář
+                                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                        <g id="About">
+                                            <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                        </g>
+                                    </svg>
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>    
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img src="img/section-services-image1.png" alt="image" class="img-fluid pe-lg-5 mx-auto mx-lg-0">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div class="section-title">
+                            <h2>Služby</h2>
+                        </div>
+                        <div class="section-output">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                            </p>
+                        </div>
+                        <div class="section-footer mt-5">
+                            <div class="section-output mb-5">
+                                <h4>Pro více informací nás kontaktujte</h4>
+                            </div>
+                            <a href="#" class="button button-cyan">
+                                Poptávkový formulář
+                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
+                                    <g id="About">
+                                        <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
+                                    </g>
+                                </svg>
+                            </a>    
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-3 offset-xl-2">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <img src="img/icons/icon-pin.svg" alt="pin">
+                            </div>
+                            <div>
+                                <h3>Kontakt</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <div class="section-output">
+                                <p>KOSYKA, s.r.o.<br>
+                                Hruškové Dvory 118<br>
+                                586 01 Jihlava<br>
+                                Česká Republika<br>
+                                GPS: 49,412415°N, 15,604766°E</p>
+                            </div>
+                            <div class="footer-contact">
+                                <a href="#" class="footer-contact-phone">+420 123 456 789</a>
+                                <a href="#" class="footer-contact-email">info@kosyka.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <img src="img/icons/icon-links.svg" alt="links">
+                            </div>
+                            <div>
+                                <h3>Odkazy</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">
+                                        O společnosti
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Produkty                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kvalita
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Technologie
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nabídky spolupráce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kariéra
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <div>
+                                <img src="img/icons/icon-shield.svg" alt="shield">
+                            </div>
+                            <div>
+                                <h3>Certifikáty</h3>
+                            </div>
+                        </div>
+                        <div class="footer-item-content">
+                            <ul class="footer-certificates">
+                                <li>
+                                    <a href="#">
+                                        ISO 9001: 2015
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        ISO 14001: 2015                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        IATF 16949
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="copyright">
+        <div class="container">
+            <p>COPYRIGHT © 2023 kosyka.cz | TVORBA WWW STRÁNEK <a href="https://machin.cz/">MACHIN.CZ</a></p>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
