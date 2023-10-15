@@ -1,0 +1,11 @@
+.section-address {
+    &-map {
+        iframe {
+            width: 100%;
+            min-height: 450px;
+            @include media("xl") {
+                min-height: 300px;
+            }
+        }
+    }
+}

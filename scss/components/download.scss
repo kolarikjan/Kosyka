@@ -1,0 +1,50 @@
+.section-download {
+    &-card {
+        background-color: var(--background-color);
+        filter: drop-shadow(6.994px 5.664px 24.5px rgba(0, 27, 73, 0.04));
+        padding: 1.75rem 2.25rem;
+        height: 100%;
+    }
+    &-row {
+        padding-top: 1rem;
+        height: calc(100% - 5.3125rem);
+        @include media("lg") {
+            padding-top: 0;
+            height: auto;
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: .6rem 0;
+        &:hover{ 
+            text-decoration: none;
+            p {
+                color: var(--highlight-color2);
+            }
+        }
+        p {
+            margin-bottom: 0;
+            line-height: 32px;
+            color: var(--tertiary-color);
+            font-weight: 600;
+            transition-duration: 0.15s;
+        }
+        span {
+            width: 32px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            display: block;
+            background-color: var(--highlight-color2);
+            flex-shrink: 0;
+            @include flexCenter();
+            svg, svg path {
+                fill: var(--secondary-color);
+            }
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--border-color);
+        }
+    }
+}

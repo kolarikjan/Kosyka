@@ -1,0 +1,51 @@
+.section-positions {
+    &-item {
+        background-color: var(--secondary-color);
+        padding: 3.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media("md") {
+            padding: 3.5rem 2.5rem;
+        }
+        @include media("sm") {
+            padding: 3.5rem 1.5rem;
+        }
+        &-parameter {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            p {
+                margin-bottom: 0;
+            }
+            &-large span {
+                color: var(--highlight-color2);
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: -.05rem;
+            }
+            &-normal span {
+                color: var(--tertiary-color);
+                font-weight: 600;
+            }
+        }
+        &-button {
+            margin-top: 3.5rem;
+        }
+    }
+    .owl-carousel {
+        .owl-stage {
+            display: flex;
+            .owl-item {
+                flex: 1 0 auto;
+            }
+        } 
+        &.owl-custom-nav .owl-nav button {
+            background: #d8ecf8 !important;
+            &:hover {
+                background: var(--highlight-color) !important;
+            }
+        }
+    }
+}

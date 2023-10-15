@@ -1,0 +1,26 @@
+.section-download-card {
+  background-color: var(--background-color);
+  filter: drop-shadow(6.994px 5.664px 24.5px rgba(0, 27, 73, 0.04));
+  padding: 2.25rem;
+  height: calc(100% - 4rem);
+  margin-bottom: 4rem;
+}
+.section-download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-download-item span {
+  width: 28px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--highlight-color2);
+  flex-shrink: 0;
+}
+.section-download-item span svg, .section-download-item span svg path {
+  fill: var(--secondary-color);
+}
+.section-download-item:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}/*# sourceMappingURL=download.css.map */

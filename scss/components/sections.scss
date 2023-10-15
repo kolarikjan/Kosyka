@@ -15,6 +15,14 @@
         }
     }
     &-title {
+        span {
+            color: var(--tertiary-color);
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+            display: block;
+            margin-bottom: .5rem;
+        }
         h1,h2,h3 {
             color: var(--tertiary-color);
             letter-spacing: -1px;
@@ -61,7 +69,7 @@
         p, li {
             font-size: 16px;
             line-height: 30px;
-            font-weight: 400;
+            font-weight: 500;
             color: var(--paragraph-color);
         }
         & > *:last-child {
@@ -82,6 +90,21 @@
                     margin-right: 1rem;
                 }
             }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--tertiary-color);
+        }
+        h3 {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 38px;
+            font-weight: 600;
+            margin-bottom: 2rem;
         }
     }
     &-label {
@@ -128,6 +151,48 @@
     &-background {
         &-light {
             background-color: var(--background-secondary-color);
+        }
+        &-dark {
+            background-image: linear-gradient(135deg, #0b2e6b 0%, #0b2e6b 0%, #001b49 72%, #001b49 99%, #001b49 100%);
+        }
+        &-remove {
+            background-image: none !important;
+            background-color: transparent !important;
+        }
+    }
+    &-boxes {
+        &-row {
+            margin-bottom: -4rem;
+            @include media("md") {
+                margin-bottom: -3rem;
+            }
+        }
+        &-item {
+            margin-bottom: 4rem;
+            @include media("md") {
+                margin-bottom: 3rem;
+            }
+            &-imagebox {
+                margin-bottom: 2rem;
+                @include media("md") {
+                    margin-bottom: 1.5rem;
+                }
+                img {
+                    width: 250px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    @include media("md") {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    &-image {
+        &-first {
+            @include media("lg") {
+                padding-top: 0;
+            }
         }
     }
 }

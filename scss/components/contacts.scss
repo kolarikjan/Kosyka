@@ -1,0 +1,19 @@
+.section-contacts {
+    &-row {
+        @extend .section-boxes-row;
+    }
+    &-item {
+        margin-bottom: 3.5rem;
+        @include media("md") {
+            margin-bottom: 3rem;
+        }
+        @include media("sm") {
+            a {
+                display: block;
+            }
+        }
+        &-imagebox {
+            @extend .section-boxes-item-imagebox;
+        }
+    }
+}

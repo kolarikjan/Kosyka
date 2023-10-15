@@ -1,0 +1,14 @@
+.section-contacts-row {
+  margin-bottom: -3.5rem;
+}
+.section-contacts-item {
+  margin-bottom: 3.5rem;
+}
+.section-contacts-item-imagebox {
+  margin-bottom: 2rem;
+}
+.section-contacts-item-imagebox img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}/*# sourceMappingURL=contacts.css.map */
