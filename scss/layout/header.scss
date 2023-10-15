@@ -130,7 +130,7 @@
                     text-decoration: none !important;
                     position: relative;
                 }
-                &:hover {
+                &:hover, &.active {
                     background-color: var(--border-color-light);
                 }
                 img, svg {
@@ -259,8 +259,15 @@
         @include min-media("lg") {
             position: relative;
         }
-        &:hover &-inner {
-            display: block;
+        &-close {
+            position: absolute;
+            top: 1.55rem;
+            right: 0.975rem;
+            svg {
+                &, path {
+                    fill: var(--secondary-color);
+                }
+            }
         }
         &-inner {
             display: none;
@@ -270,13 +277,17 @@
             @media (max-width: 1200px) and (min-width: 993px) {
                 top:-2px;
                 bottom: -2px;
-                padding-right: 3.5rem;
+                right: 3.5rem;
                 padding-top: 0;
             }
             @include media("lg") {
-                left: 0;
-                width: fit-content;
-                margin: 0 auto;
+                left: -1rem;
+                top: 0;
+                bottom: 0;
+                right: -1rem;
+                width: calc(100% + 2rem);
+                backdrop-filter: blur(10px);
+                z-index: 2;
             }
             form {
                 input {
@@ -286,8 +297,14 @@
                     margin-right: 4rem;
                     font-weight: 400;
                     color: var(--paragraph-color);
+                    font-size: 15px;
+                    line-height: 24px;
                     @include media("lg") {
                         padding: 0.7rem 4.5rem 0.7rem 1.5rem;
+                        width: 350px;
+                    }
+                    @include media("sm") {
+                        width: 250px;
                     }
                 }
                 button {
@@ -297,6 +314,9 @@
                     right: 0;
                 }
             }
+        }
+        &.active &-inner {
+            display: block;
         }
     }
     &-subpage {

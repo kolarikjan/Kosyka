@@ -3,7 +3,7 @@ const checkVisible = (elm) => {
 
     let rect = elm.getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 50);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 
 }
 
@@ -154,8 +154,8 @@ $(document).ready(function () {
     catalogImages();
 
     window.onclick = e => {
-        if (!e.target.closest(".theme-dropdown")) {
-            $(".theme-dropdown").removeClass("active");
+        if (!e.target.closest(".header-search")) {
+            $(".header-search").removeClass("active");
         }
     }
 
@@ -222,12 +222,17 @@ $(document).ready(function () {
         companySliderChanger("next");
     });
 
+    $(".header-search > a, .header-search-close").click(function (e) { 
+        e.preventDefault();
+        $(".header-search").toggleClass("active");
+    });
+
     $('.owl-banner-home').owlCarousel({
         items:1,
-        loop:true,
+        loop:false,
         rewind:true,
         navText:['<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 13 8" width="13" height="8"><g id="Menu-top"><path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/></g></svg>','<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 13 8" width="13" height="8"><g id="Menu-top"><path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/></g></svg>'],
-        margin:0,
+        margin:1,
         nav: homepageBannerLength > 1 ? true : false,
         dots: homepageBannerLength > 1 ? true : false,
         autoplay:true,

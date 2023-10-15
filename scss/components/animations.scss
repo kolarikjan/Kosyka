@@ -10,7 +10,7 @@
 }
 @keyframes slideInTop {
     0% {
-      transform: translateY(-20rem);
+      transform: translateY(-15rem);
     }
     100% {
       transform: translateY(0);
@@ -18,7 +18,7 @@
 }
 @keyframes slideInBottom {
     0% {
-      transform: translateY(20rem);
+      transform: translateY(15rem);
     }
     100% {
       transform: translateY(0);
@@ -26,7 +26,7 @@
 }
 @keyframes slideInRight {
     0% {
-      transform: translateX(20rem);
+      transform: translateX(15rem);
     }
     100% {
       transform: translateX(0);
@@ -34,7 +34,7 @@
 }
 @keyframes slideInLeft {
     0% {
-      transform: translateX(-20rem);
+      transform: translateX(-15rem);
     }
     100% {
       transform: translateX(0);
@@ -43,20 +43,20 @@
 .scroll {
     &-animation {
         &-top {
-            transform: translateY(-20rem);
+            transform: translateY(-15rem);
         }
         &-bottom {
-            transform: translateY(20rem);
+            transform: translateY(0rem);
         }
         &-left {
-            transform: translateX(-20rem);
+            transform: translateX(-15rem);
         }
         &-right {
-            transform: translateX(20rem);
+            transform: translateX(15rem);
         }
     }
     &-hidden {
-        overflow: hidden;
+        overflow-x: clip;
     }
     &-in {
         &-top {

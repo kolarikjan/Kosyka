@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
     <!-- STYLE -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -77,16 +79,24 @@
                             </li>
                             <li class="">
                                 <div class="header-rightbox d-flex d-lg-none flex-column justify-content-center align-items-center">
-                                    <div class="header-rightbox-buttons">
-                                        <a href="#" class="button button-cyan button-shine">
-                                            Eshop
-                                        </a>
-                                    </div>
                                     <div class="header-rightbox-icons d-flex align-items-center">
-                                        <div>
+                                        <div class="header-search">
                                             <a href="#">
                                                 <img src="img/icons/icon-search.svg" alt="search">
                                             </a>
+                                            <div class="header-search-inner">
+                                                <form class="position-relative h-100">
+                                                    <div class="d-flex w-fit mx-auto align-items-center h-100">
+                                                        <div class="position-relative">
+                                                            <input type="text" name="search">
+                                                            <button class="button button-cyan button-shine">Hledat</button>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="header-search-close d-lg-none">
+                                                        <span class="animated-icon open"><span></span><span></span><span></span></span>
+                                                    </a>
+                                                </form>
+                                            </div>
                                         </div>
                                         <div class="header-rightbox-icons-dropdown">
                                             <a href="#">
@@ -116,16 +126,24 @@
                     </div>
                 </div>
                 <div class="header-rightbox d-none d-lg-flex flex-column flex-md-row align-items-start align-items-md-center order-3 order-lg-2 order-xl-3 ms-0 ms-lg-auto ms-xl-0">
-                    <div class="header-rightbox-buttons">
-                        <a href="#" class="button button-cyan button-shine">
-                            Eshop
-                        </a>
-                    </div>
                     <div class="header-rightbox-icons d-flex align-items-center">
-                        <div>
+                        <div class="header-search">
                             <a href="#">
                                 <img src="img/icons/icon-search.svg" alt="search">
                             </a>
+                            <div class="header-search-inner">
+                                <form class="position-relative h-100">
+                                    <div class="d-flex w-fit mx-auto align-items-center h-100">
+                                        <div class="position-relative">
+                                            <input type="text" name="search">
+                                            <button class="button button-cyan button-shine">Hledat</button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="header-search-close d-lg-none">
+                                        <span class="animated-icon open"><span></span><span></span><span></span></span>
+                                    </a>
+                                </form>
+                            </div>
                         </div>
                         <div class="header-rightbox-icons-dropdown">
                             <a href="#">
@@ -154,7 +172,7 @@
         </div>
         <div class="header-banner">
             <div class="container-split">
-                <div class="row">
+                <div class="row scroll-hidden">
                     <div class="col-12 col-xl-6 order-2 order-xl-1">
                         <div class="container container-split-left container-split-xl h-100 scroll-animation-left">
                             <div class="header-banner-text">
@@ -166,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-6 order-1 order-xl-2 container-split-mobile-nospacing scroll-animation-right">
+                    <div class="col-12 col-xl-6 order-1 order-xl-2 container-split-mobile-nospacing scroll-animation-right header-banner-owl">
                         <div class="owl-carousel owl-theme owl-banner-home">
                             <div class="header-banner-item">
                                 <img src="img/section-banner-home-item1.png" alt="banner image">
@@ -255,7 +273,7 @@
 
     <div class="section-products section section-dark section-background-light">
         <div class="container-split">
-            <div class="row">
+            <div class="row scroll-hidden">
                 <div class="col-12 col-lg-6 container-split-mobile-nospacing scroll-animation-left">
                     <div class="section-products-gallery">
                         <a href="#" class="section-products-gallery-item">

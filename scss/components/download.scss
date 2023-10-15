@@ -5,7 +5,7 @@
         padding: 1.5rem 2.25rem;
         height: calc(100% - 5.3125rem);
         &-newsrow {
-            height: calc(100% - 4.3125rem);
+            height: calc(100% - 6.3125rem);
         }
         @include media("lg") {
             height: auto;
