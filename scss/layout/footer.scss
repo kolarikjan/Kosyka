@@ -1,9 +1,18 @@
 .footer {
-    background-image: url("../../img/layout-footer-background.png");
+    background-image: url("../img/layout-footer-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 4rem 0;
+    @include media("md") {
+        padding: 3rem 0;
+    }
+    &-address {
+        @media (max-width: 1500px) and (min-width: 1200px) {
+            margin-left: 0;
+            width: 50%;
+        }
+    } 
     &-item {
         &-header {
             display: flex;
@@ -11,6 +20,7 @@
             margin-bottom: 1.5rem;
             @include media("md") {
                 justify-content: center;
+                margin-bottom: 1rem;
             }
             & > div:first-child {
                 width: 2.25rem;
@@ -43,6 +53,9 @@
             font-size: 16px;
             line-height: 30px;
             font-weight: 400;
+            @include media("md") {
+                font-size: 15px;
+            }
         }    
     }
     &-menu {
@@ -70,16 +83,16 @@
             display: block;
         }
         &-phone {
-            margin-top: 1.25rem;
+            margin-top: .3rem;
             font-size: 30px;
-            line-height: 18px;
+            line-height: 40px;
             color: var(--secondary-color) !important;
             font-weight: 500;
         }
         &-email {
-            margin-top: 1.25rem;
+            margin-top: .3rem;
             font-size: 20px;
-            line-height: 18px;
+            line-height: 28px;
             color: var(--highlight-color) !important;
             font-weight: 400;
         }

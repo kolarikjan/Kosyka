@@ -1,5 +1,5 @@
 .section-aboutus {
-    background-image: url("../../img/section-aboutus-background.png");
+    background-image: url("../img/section-aboutus-background.png");
     background-repeat: no-repeat;
     background-position: bottom 1.5rem right;
     @include media("xl") {
@@ -12,6 +12,8 @@
         font-weight: 600;
         margin-bottom: 1.25rem;
         @include media("md") {
+            font-size: 20px;
+            line-height: 30px;
             text-align: center;
         }
     }
@@ -21,6 +23,8 @@
         line-height: 32px;
         margin-bottom: 0;
         @include media("md") {
+            font-size: 15px;
+            line-height: 30px;
             text-align: center;
         }
     }

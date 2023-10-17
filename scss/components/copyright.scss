@@ -4,6 +4,10 @@
     p {
         color: var(--light-color);
         margin-bottom: 0;
+        @include media("md") {
+            font-size: 15px;
+            line-height: 26px;
+        }
     }
     a {
         color: var(--light-color);

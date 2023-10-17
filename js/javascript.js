@@ -3,8 +3,24 @@ const checkVisible = (elm) => {
 
     let rect = elm.getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 50);
 
+}
+
+const scrollAnimation = (elementClass, animationClass) => {
+    if($(elementClass).length) {
+        $(elementClass).each(function(){
+            if (checkVisible(this)) {
+                $(this).addClass(animationClass);
+            }
+        });
+    }
+}
+const scrollAnimationSet = () => {
+    scrollAnimation(".scroll-animation-bottom","scroll-in-bottom");
+    scrollAnimation(".scroll-animation-top","scroll-in-top");
+    scrollAnimation(".scroll-animation-left","scroll-in-left");
+    scrollAnimation(".scroll-animation-right","scroll-in-right");
 }
 
 const numbersAnimation = (className) => {
@@ -250,7 +266,7 @@ $(document).ready(function () {
                 items:1
             },
             576:{
-                items:2
+                items:2,
             }
         }
     });
@@ -353,6 +369,8 @@ $(document).ready(function () {
             e.preventDefault();
         });
     }
+    
+    scrollAnimationSet();
 
 });
 $(window).resize(function () { 
@@ -378,12 +396,6 @@ $(window).scroll(function () {
         }
     }
     
-    if($(".scroll-animation").length) {
-        
-        $(".scroll-animation").each(function(){
-            if (checkVisible(this)) {
-                $(this).addClass("scroll-in");
-            }
-        });
-    }
+    scrollAnimationSet();
+
 });

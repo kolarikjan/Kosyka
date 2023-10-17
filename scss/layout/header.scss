@@ -21,17 +21,15 @@
         }
         &-link {
             & > a {
-                color: var(--secondary-color);
+                color: var(--secondary-color) !important;
                 font-size: 16px;
                 font-weight: 600;
                 display: flex;
                 align-items: center;
                 text-decoration: none !important;
-                &:hover {
-                    color: var(--secondary-color);
-                    svg, svg path {
-                        fill: var(--secondary-color);
-                    }
+                padding: 0;
+                svg, svg path {
+                    fill: var(--secondary-color);
                 }
                 svg {
                     display: block;
@@ -257,6 +255,50 @@
             }
         }
     }
+    &-search {
+        @include min-media("lg") {
+            position: relative;
+        }
+        &:hover &-inner {
+            display: block;
+        }
+        &-inner {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding-top: .5rem;
+            @media (max-width: 1200px) and (min-width: 993px) {
+                top:-2px;
+                bottom: -2px;
+                padding-right: 3.5rem;
+                padding-top: 0;
+            }
+            @include media("lg") {
+                left: 0;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            form {
+                input {
+                    border-radius: var(--button-radius);
+                    padding: .875rem 4.5rem .875rem 1.5rem;
+                    width: 250px;
+                    margin-right: 4rem;
+                    font-weight: 400;
+                    color: var(--paragraph-color);
+                    @include media("lg") {
+                        padding: 0.7rem 4.5rem 0.7rem 1.5rem;
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
     &-subpage {
         h1 {
             font-size: 54px;
@@ -282,6 +324,13 @@
             object-fit: cover;
         }
         &-text {
+            padding-bottom: 10rem;
+            @media (max-width: 1500px) {
+                padding-bottom: 8rem;
+            }
+            @media (max-width: 1350px) {
+                padding-bottom: 6rem;
+            }
             @include media("xl") {
                 padding: 1.5rem 0 4rem 0;
             }

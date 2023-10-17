@@ -8,6 +8,9 @@
             &:not(:last-child) {
                 margin-bottom: .5rem;
             }
+            @include media("md") {
+                font-size: 16px;
+            }
         }
     }
     &-banner {
@@ -17,6 +20,13 @@
             .container {
                 max-width: unset;
                 padding: unset;
+            }
+        }
+        .owl-item {
+            img {
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                max-height: 400px;
             }
         }
     }
