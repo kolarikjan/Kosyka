@@ -1,0 +1,107 @@
+.banks {
+    &__item {
+        height: 100%;
+        @include flexCenter();
+        @include media("md") {
+            height: auto;
+            margin-bottom: 3rem;
+            &:last-of-type {
+                margin-bottom: 0rem;
+            }
+        }
+        img {
+            width: auto !important;
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            opacity: 0.6;
+            max-height: 75px;
+            transition-duration: 0.1s;
+            &:hover {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    } 
+    .owl-carousel {
+        @include min-media("xxl") {
+            padding: 0 3.5rem;
+        }
+        .owl-stage {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+.howItWorks {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        > div {
+            position: relative;
+            width: 25%;
+            padding: 5rem;
+            aspect-ratio: 1/1;
+            @include flexCenterDir(column);
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            border-right: 1px solid $border-color;
+            transition-duration: 0.1s;
+            &:first-of-type {
+                border-left: 1px solid $border-color;
+            }
+            @include media("xxl") {
+                padding: 1rem;
+            }
+            @include media("lg") {
+                padding: 4rem 1rem;
+            }
+            @include media("md") {
+                width: 100%;
+                border: 1px solid $border-color;
+                &:not(:last-of-type) {
+                    border-bottom: 0;
+                }
+            }
+            /*
+            &:hover {
+                background-color: lighten($color: $border-color, $amount: 8%);
+            }
+            */
+            &:not(:last-of-type)::after {
+                position: absolute;
+                right: -21px;
+                transform: translateY(-50%);
+                top: 50%;
+                height: 40px;
+                width: 40px;
+                background-color: $background-color;
+                content: url("../img/arrow-blue-right2.svg");
+                @include flexCenter();
+                z-index: 9999;
+                @include media("md") {
+                    transform: rotate(90deg) translateY(0);
+                    top: unset;
+                    bottom: -21px;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                }
+            }
+            img {
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                color: $primary-color;
+                text-align: center;
+                min-height: 54px;
+                margin-bottom: 0;
+                @include media("xxl") {
+                    min-height: unset;
+                }
+            }
+        }
+    }
+}

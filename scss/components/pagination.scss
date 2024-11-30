@@ -1,0 +1,49 @@
+.pagination {
+    ul {
+        @include flexCenter();
+        flex-wrap: wrap;
+        margin: 3rem auto 0;
+        padding: 0;
+        list-style: none;
+        @include media("md") {
+            margin: 1.75rem auto 0;
+        }
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                color: var(--paragraph-color);
+                transition-duration: 0.15s;
+                &:hover {
+                    color: var(--highlight-color);
+                    text-decoration: none;
+                }
+            }
+            &:not(:last-child):not(:first-child) a {
+                @include flexCenter();
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-right: .125rem;
+                &.active, &:hover {
+                    background-color: var(--highlight-color);
+                    color: var(--secondary-color);
+                }
+            }
+            &:first-child {
+                margin-right: 1rem;
+                svg {
+                    margin-right: .5rem;
+                }
+            }
+
+            &:last-child {
+                margin-left: 1rem;
+                svg {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}

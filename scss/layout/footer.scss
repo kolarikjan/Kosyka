@@ -7,12 +7,47 @@
     @include media("md") {
         padding: 3rem 0;
     }
-    &-address {
-        @media (max-width: 1500px) and (min-width: 1200px) {
-            margin-left: 0;
-            width: 50%;
+    &-row {
+        @media (min-width: 1500px) {
+            margin-left: -1.75rem;
+            margin-right: -1.75rem;
+            & > div {
+                padding-left: 1.75rem;
+                padding-right: 1.75rem;
+            }
         }
-    } 
+        @media (min-width: 1200px) and (max-width: 1500px) {
+            margin-left: -1rem;
+            margin-right: -1rem;
+            & > div {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        & > div:not(:last-child) {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 1px;
+                background-color: var(--background-color);
+                opacity: .15;
+                @media (max-width: 1200px) {
+                    height: 1px;
+                    width: 100%;
+                    top: unset;
+                    bottom: 0;
+                }
+            }
+            @media (max-width: 1200px) {
+                padding-bottom: 2.25rem;
+                margin-bottom: 2.25rem;
+            }
+        }
+    }
     &-item {
         &-header {
             display: flex;
@@ -23,7 +58,7 @@
                 margin-bottom: 1rem;
             }
             & > div:first-child {
-                width: 2.25rem;
+                width: 1.75rem;
                 @include media("md") {
                     width: auto;
                     margin-right: .5rem;
@@ -39,24 +74,58 @@
                 margin-bottom: 0;
             }
         }
+        &-contentbox {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            &-header {
+                display: block;
+                text-decoration: none !important;
+                margin-bottom: .25rem;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 400;
+                span {
+                    color: var(--background-color) !important;
+                    &:hover {
+                        text-decoration: underline !important;
+                    }
+                }
+                img {
+                    max-height: 65px;
+                    max-width: 200px;
+                    object-fit: scale-down;
+                    margin-bottom: 1rem;
+                    transition-duration: .15s;
+                    filter: grayscale(1);
+                    @media (max-width: 1200px) {
+                        display: block;
+                        margin: 0 auto 1rem;
+                    }
+                    &:hover {
+                        filter: none;
+                    }
+                }
+            }
+        }
         &-content {
-            margin-left: 2.25rem;
             @include media("md") {
-                margin-left: 0;
                 text-align: center;
             }
         }
     }
     &-menu, .section-output {
         a, p {
-            color: var(--light-color);
-            font-size: 16px;
-            line-height: 30px;
+            font-size: 14px;
+            line-height: 25px;
             font-weight: 400;
-            @include media("md") {
-                font-size: 15px;
+            &, strong, b {
+                color: var(--light-color);
             }
-        }    
+        }
+        a {
+            color: var(--background-color);
+        }  
     }
     &-menu {
         list-style: none;

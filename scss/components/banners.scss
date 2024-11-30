@@ -18,7 +18,7 @@
             font-size: 50px;
             line-height: 65px;
             font-weight: 400;
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
             @include min-media("xxl") {
                 max-width: 82%;
             }
@@ -50,17 +50,39 @@
             @include media("md") {
                 text-align: center;
             }
-            span {
-                border-radius: var(--border-radius);
-                display: inline-block;
-                padding: 0 .65rem;
-                line-height: 31px;
-            }
-            &:nth-child(1) span {
-                background-color: var(--highlight-color);
-            }
-            &:nth-child(2) span {
-                background-color: var(--highlight-color2);
+        }
+        &-inner {
+            p {
+                a {
+                    color: var(--secondary-color) !important;
+                    border-radius: 3rem;
+                    display: inline-block;
+                    padding: 0 .65rem;
+                    line-height: 31px;
+                    font-weight: 500;
+                    transition-duration: .15s;
+                    background-image: url("../img/icons/icon-arrow-bubbles.svg");
+                    background-repeat: no-repeat;
+                    background-position: right 8px center;
+                    background-size: 0;
+                    &:hover {
+                        text-decoration: none;
+                        padding-right: 1.5rem;
+                        background-size: 10px 8px;
+                    }
+                }
+                &:nth-child(odd) a {
+                    background-color: var(--highlight-color);
+                    &:hover {
+                        filter: drop-shadow(0px 0px 3px var(--highlight-color));
+                    }
+                }
+                &:nth-child(even) a {
+                    background-color: var(--highlight-color2);
+                    &:hover {
+                        filter: drop-shadow(0px 0px 3px var(--highlight-color2));
+                    }
+                }
             }
         }
     }

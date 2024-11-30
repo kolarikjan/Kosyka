@@ -1,0 +1,41 @@
+.brands {
+    margin-top: -2rem;
+    padding-bottom: 1.5rem;
+    &__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: -0.5px;
+        width: 100%;
+        position: relative;
+        span {
+            background-color: $background-color;
+            padding: 0 4rem;
+        }
+        &::after {
+            content: "";
+            height: 1px;
+            background-color: #e7e7e7;
+            display: block;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+    }
+    .owl-carousel {
+        .owl-stage {
+            margin: 0 auto;
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+            }
+        }
+    }
+}

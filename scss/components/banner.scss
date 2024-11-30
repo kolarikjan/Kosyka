@@ -1,0 +1,54 @@
+.hpBanner {
+    background-image: url("../img/banner-photo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 6rem 0 5rem;
+    @include media("md") {
+        padding: 3rem 0 3.5rem;
+    }
+    &__contentbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &__title {
+        color: $primary-color-darkbg;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 68px;
+        margin-bottom: 2rem;
+        @include media("md") {
+            font-size: 45px;
+            line-height: 53px;
+        }
+    }
+    span {
+        color: $primary-color-darkbg;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 600;
+        @include media("md") {
+            font-size: 17px;
+        }
+    }
+    &__advantages {
+        list-style: none;
+        margin: 1rem 0 2.5rem;
+        li {
+            padding-left: 2rem;
+            background-image: url("../img/icon-tick.svg");
+            background-repeat: no-repeat;
+            background-position: left top 7px;
+            color: $primary-color-darkbg;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 34px;
+            @include media("md") {
+                font-size: 16px;
+                line-height: 34px;
+            }
+        }
+    }
+}

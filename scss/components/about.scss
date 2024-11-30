@@ -1,0 +1,41 @@
+.about {
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+    &-text {
+        max-width: 85%;
+        p {
+            color: var(--paragraph-color);
+            font-size: 18px;
+            line-height: 33px;
+            font-weight: 500;
+        }
+        @include media("md") {
+            text-align: center;
+            max-width: 100%;
+        }
+    }
+    &-image { 
+        background-image: url("../img/section-about-background2.png"), url("../img/section-about-background1.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right top;
+        background-size: auto, 78%;
+        @include widthFit();
+        margin: auto;
+        transition: 0.25s;
+        &:hover {
+            background-position: left 1rem bottom 1rem, right 1rem top 1rem;
+        }
+        img {
+            max-width: 525px;
+            display: block;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: calc(var(--border-radius) * 4 );
+            @include media("lg") {
+                margin-top: 3rem;
+                max-width: 100%;
+            }
+        }
+    }
+}

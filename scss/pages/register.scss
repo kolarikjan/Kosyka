@@ -1,0 +1,20 @@
+.register {
+    &__company {
+        &-content  {
+            display: none;
+            margin-bottom: 3.5rem;
+            @include media("md") {
+                margin-bottom: 2.5rem;
+            }
+            @include media("sm") {
+                margin-bottom: 1rem;
+            }
+        }
+        &.active > &-content {
+            display: block;
+        }
+        .form__checkbox {
+            margin-bottom: 2rem;
+        }
+    }
+}

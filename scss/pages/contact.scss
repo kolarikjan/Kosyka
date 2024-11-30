@@ -1,0 +1,42 @@
+.contact {
+    &__map {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        opacity: 0.8;
+        transition-duration: 0.3s;
+        @include media("lg") {
+            margin-bottom: 3rem;
+        }
+        &:hover {
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+            opacity: 1;
+}
+    }
+    &__mailtel {
+        margin: 2rem 0 2.25rem;
+    }
+    &__mail {
+        display: block;
+        font-size: 15px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    &__tel {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: $primary-color !important;
+        display: block;
+    }
+    h2 {
+        font-size: 15px;
+        color: $primary-color;
+        line-height: 26px;
+        margin: 0;
+        font-weight: 700;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,94 @@
+.services {
+    margin-bottom: -1.4rem;
+    padding-bottom: 3rem !important;
+    &-box {
+        margin-bottom: 1.4rem;
+        background-color: var(--services-boxes-color);
+        padding: 4rem 3.5rem 3.5rem;
+        border-radius: var(--border-radius);
+        @include flexCenterDir(column);
+        justify-content: space-between;
+        height: calc(100% - 1.4rem);
+        &:hover &-icon svg, &:hover &-icon img {
+            animation: shake 1300ms;
+        }
+        @include media("lg") {
+            padding: 4rem 3.5rem;
+        }
+        @include media("md") {
+            padding: 3rem 2.5rem;
+        }
+        @include media("sm") {
+            padding: 3rem 2rem;
+        }
+        &-icon svg, &-icon img {
+            margin: 0 auto;
+            max-height: 68px;
+        }
+        &-title {
+            font-size: 25px;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: block;
+            text-align: center;
+            margin: 1.75rem 0 1.25rem;
+            transition: 0.15s;
+            &:hover {
+                color: var(--highlight-color);
+                text-decoration: none;
+            }
+            @include media("xl") {
+                margin: 1.75rem 0 1.25rem;
+            }
+        }
+        &-desc {
+            color: var(--paragraph-color);
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        &-more {
+            color: var(--highlight-color) !important;
+            font-size: 17px;
+            line-height: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            &:hover {
+                text-decoration: none;
+                svg {
+                    margin-left: .75rem;
+                }
+            }
+            svg {
+                transition: 0.25s;
+                margin-left: .5rem;
+            }
+        }
+    }
+    @include min-media("xxl") {
+        .row {
+            margin: 0 -25px;
+        }
+        .row > div {
+            padding: 0 25px;
+        }
+    }
+    @include media("md") {
+        padding-bottom: 1.5rem !important;
+        .row {
+            margin-left: -7px;
+            margin-right: -7px;
+            & > div {
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+        }
+        &-box {
+            height: calc(100% - 0.88rem);
+            margin-bottom: 0.88rem;
+        }
+        margin-bottom: -0.88rem;
+    }
+}
